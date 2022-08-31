@@ -1,0 +1,128 @@
+
+        @font-face {
+            font-family: "Arabic Medium";
+            src: url(/Front/font/Qatar2022/Graphik\ Arabic\ Medium.otf);
+        }
+        @font-face {
+            font-family: "Arabic Bolt";
+            src: url(/Front/font/Qatar2022/Qatar2022Arabic-Bold.ttf);
+        }
+        
+        @font-face {
+            font-family: "Arabic Heavy";
+            src: url(/Front/font/Qatar2022/Qatar2022Arabic-Heavy.ttf);
+        }
+
+.arabicMedium{
+    font-family: "Arabic Medium";
+}
+
+.arabicBolt{
+    font-family: "Arabic Bolt";
+}
+
+.arabicHeavy{
+    font-family: "Arabic Heavy";
+}
+
+body{
+    display: block;
+    padding: 50px 25px;
+    margin: 25px 25px;
+}
+.titulo{
+    padding-top: 5px;
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    border-bottom: 2px solid black  ;
+}
+.gradient1{
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #500322, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.bandera{
+    float: left;
+    padding: 0px;
+    margin: 25px;
+    width:150px;
+    height: 150px;
+    border: 2px solid black;
+}
+.linea50{
+    display: block;
+    margin: 0%;
+    padding: 0px;
+    width: 100%;
+    height: 37.5% ;
+}
+
+.linea40{
+    display: block;
+    margin: 0%;
+    padding: 0px;
+    width: 100%;
+    height: 40px ;
+}
+
+.linea30{
+    display: block;
+    margin: 0%;
+    padding: 0px;
+    width: 100%;
+    height: 25% ;
+}
+.linea20{
+    display: block;
+    margin: 0%;
+    padding: 0px;
+    width: 100%;
+    height: 19% ;
+}
+
+.celeste{
+    background-color: skyblue;
+    color: rgba(135, 207, 235, 0);
+}
+
+.blanco{
+    background-color: white;
+    color: rgba(255, 255, 255, 0);
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+
+.verdebrasil{
+    background-color: #16b83e;
+}
+
+.ancho25{
+    float: left;
+    width: 40%;
+}
+
+.ancho75{
+    width: 100;
+    
+}

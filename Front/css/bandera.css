@@ -30,6 +30,10 @@ body{
     padding: 50px 25px;
     margin: 25px 25px;
 }
+p{
+    margin: 0;  
+    padding: 0;
+}
 .titulo{
     padding-top: 5px;
     margin: 0px;
@@ -125,4 +129,17 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
 .ancho75{
     width: 100;
     
+}
+
+#sol{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+   
+}
+
+#ba{
+    display: inline-block;
+    width: 40%;
 }

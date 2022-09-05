@@ -41,7 +41,7 @@ p{
     width: 100%;
     text-align: center;
     color:rgb(255, 255, 255);
-    border-bottom: 2px solid black  ;
+    /* border-bottom: 2px solid black  ; */
 }
 .gradient1{
 background: #c31432;  /* fallback for old browsers */
@@ -50,22 +50,32 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
 
 }
 
+.marcoBandera{
+    display: block;
+    width:150px;
+    height: 150px;
+    float: left;
+    margin: 25px;
+    min-width: 140px;
+}
 
 
 .bandera{
+    position: relative;
     float: left;
     padding: 0px;
-    margin: 25px;
-    width:150px;
-    height: 150px;
-    border: 2px solid black;
+    width:13vw;
+    height: 20vh;
+  border: 1px solid rgba(155, 6, 6, 0.196); 
+    overflow: hidden; 
+    border-radius: 50%;
 }
 .linea50{
     display: block;
     margin: 0%;
     padding: 0px;
     width: 100%;
-    height: 37.5% ;
+    height:10vh ;
 }
 
 .linea40{
@@ -81,14 +91,14 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     margin: 0%;
     padding: 0px;
     width: 100%;
-    height: 25% ;
+    height: 6.66vh;
 }
 .linea20{
     display: block;
     margin: 0%;
     padding: 0px;
     width: 100%;
-    height: 19% ;
+    height: 5vh ;
 }
 
 .celeste{
@@ -117,9 +127,70 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     background-color: green;
 }
 
-.verdebrasil{
+.verdeBrasil{
     background-color: #16b83e;
+    width: 100%;
+    height: 100%;
 }
+
+ .amarilloBrasil{
+    position: absolute;
+    border-right: solid transparent 5vw ;
+    border-left: solid transparent 5vw ;
+    border-bottom: solid rgb(244, 225, 13) 8.5vh ;
+    transform: rotate(180deg);
+    top: 10.2vh;
+    left: 1.5vw; 
+} 
+
+.amarilloBrasil2{
+    position: absolute;
+    border-right: solid transparent 5vw ;
+    border-left: solid transparent 5vw ;
+    border-bottom: solid rgb(244, 225, 13) 8.5vh;
+    transform: rotate(0deg);
+    top: 1.9vh;
+    left: 1.5vw;  
+
+
+}
+
+.azulBrasil{
+    position: absolute;
+    background-color: #3E4095;
+    border-radius: 50%;
+    width: 5vw;
+    height: 10vh;
+    top: 5vh;
+    left: 4vw;
+    overflow: hidden;
+
+}
+
+.franjaBlanca{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 6vw;
+    height: 10vh;
+    top: 1.2vw;
+    left: -2.5vh;
+
+}
+
+.azulAbajo{
+    position: absolute;
+    background-color: #3E4095;
+    border-radius: 50%;
+    width: 6vw;
+    height: 10vh;
+    top: 1.7vw;
+    left: -1.29vw;
+    
+
+}
+
+
 
 .ancho25{
     float: left;
@@ -132,14 +203,14 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
 }
 
 #sol{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    width: 3vw;
+    height: 5vh;
     border-radius: 50%;
+    top: 7.7vh;
+    left: 5.0vw;
+    background-color: rgb(246, 238, 11);
    
 }
 
-#ba{
-    display: inline-block;
-    width: 40%;
-}
+

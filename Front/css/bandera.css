@@ -51,20 +51,23 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
 }
 
 .marcoBandera{
+    box-sizing: content-box;
     display: block;
-    width:150px;
+    width:13vw;
     height: 150px;
     float: left;
-    margin: 25px;
-    min-width: 140px;
+    margin: 25px 25px;
+    padding: 2px;
+    min-width: 100px;
 }
 
 
 .bandera{
+    
     position: relative;
     float: left;
     padding: 0px;
-    width:13vw;
+    width:100%;
     height: 20vh;
   border: 1px solid rgba(155, 6, 6, 0.196); 
     overflow: hidden; 
@@ -139,8 +142,8 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     border-left: solid transparent 5vw ;
     border-bottom: solid rgb(244, 225, 13) 8.5vh ;
     transform: rotate(180deg);
-    top: 10.2vh;
-    left: 1.5vw; 
+    top: 51%;
+    left: 11%; 
 } 
 
 .amarilloBrasil2{
@@ -149,8 +152,8 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     border-left: solid transparent 5vw ;
     border-bottom: solid rgb(244, 225, 13) 8.5vh;
     transform: rotate(0deg);
-    top: 1.9vh;
-    left: 1.5vw;  
+    top: 9%;
+    left: 11%;  
 
 
 }
@@ -204,11 +207,11 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
 
 #sol{
     position: absolute;
-    width: 3vw;
-    height: 5vh;
+    width: 15%;
+    height: 25%;
     border-radius: 50%;
-    top: 7.7vh;
-    left: 5.0vw;
+    top: 39%;
+    left: 40%;
     background-color: rgb(246, 238, 11);
    
 }

@@ -101,8 +101,8 @@ header{
 
 /*INICIO GRUPO*/
 #grupos{
-    padding: 3%;
-    height: 100vh;
+    padding: 3% 15%;
+    height: 50vh;
     background-color: var(--primario);
     display: flex;
     flex-direction: row;
@@ -111,24 +111,55 @@ header{
 
 }
 
+#grupos h4{
+    
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
 .grupo{
  display: flex;
- flex-wrap: wrap;   
- height: 70%;
+ 
+ height: 80%;
  width: 5%;
- padding-top: 50px;
+ padding-top: 40px;
  margin-inline: 5px;
- background-color: #f2f2f2ed;
+ background-color: #F2F2F2;
  color: var(--alter);
  border-radius: 60px;
- transition: all 0.8s;
- /* writing-mode: vertical-rl; */
+ transition: all 1.5s;
+ overflow: hidden;
+ 
+ 
  
 }
 
-.grupo:hover{
-flex: 2 1 auto;
+.contenedorPaises{
+  
+    width: 70%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: 5px;
+    background-color: transparent; 
+    border-radius: 5px;
 }
+
+.grupo:hover{
+    flex: 1.5 1 auto;
+
+}
+.pais{
+    width: 100%;
+    height: 30px;
+    background-color: #156b491a;
+    margin-bottom: 10px;
+    font-family: 'Arabic Medium';
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
 
 /* FIN GRUPO */
 

@@ -156,25 +156,22 @@ border-radius: 5px;
 
 @media screen and (max-width:1060px) {
     #grupos{
-        padding-top: 60px; /*el padding top es de la misma altura que el header + 20px*/
         height: 200vh;
-        display: grid;
+      
         grid-template-columns: repeat(2,270px);
         grid-template-rows: repeat(4, 230px);
-        justify-content: center;
-        justify-items: normal;
+   
     
     }
+}
     
     @media screen and (max-width:530px) {
         #grupos{
-            padding-top: 60px; /*el padding top es de la misma altura que el header + 20px*/
             height: 400vh;
-            display: grid;
+           
             grid-template-columns: repeat(1,270px);
             grid-template-rows: repeat(8, 230px);
-            justify-content: center;
-            justify-items: normal;
+        
         
         }
     
@@ -225,4 +222,3 @@ footer{
 }
 
 /* FIN FOOTER */
-

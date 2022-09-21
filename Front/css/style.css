@@ -67,10 +67,9 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-
     padding: 10px 0;
     font-family: "Arabic Heavy";
-    
+    z-index: 2;
 }
 
 .logo{
@@ -131,9 +130,7 @@ border-radius: 5px;
 }
 
 .contenedorPaises{
-    
     padding: 20px 30px;
-
 }
 
 
@@ -167,13 +164,34 @@ border-radius: 5px;
     
     @media screen and (max-width:530px) {
         #grupos{
-            height: 400vh;
-           
+            /* height: 400vh;
             grid-template-columns: repeat(1,270px);
             grid-template-rows: repeat(8, 230px);
-        
-        
+         */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            padding-top: 20px;
+            justify-content: start;
+            align-items: center;
+            height: 100vh;
+           
+         
         }
+        
+        .grupo{
+            overflow: hidden;
+            width: 65vw;
+            max-height: 200px;
+            height: 20px;
+            transition: all 1s;
+        }
+
+        .grupo:hover{
+            flex-grow: 2 ;
+        }
+
+
     
 }
 

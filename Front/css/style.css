@@ -100,13 +100,28 @@ header{
 
 /*INICIO GRUPO*/
 #grupos{
-    padding-top: 60px; /*el padding top es de la misma altura que el header + 20px*/
+    height: 700px;
+}
+
+#grupos h3{
+    font-family: "Arabic Heavy";
+    font-size: 4em;
+    letter-spacing: 16px;
+    color: var(--cuarto);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.grupos-contenedor{
+    padding-top: 20px; /*el padding top es de la misma altura que el header + 20px*/
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(4,270px);
     grid-template-rows: repeat(2, 230px);
     justify-content: center;
     justify-items: normal;
+    box-sizing: content-box;
 
 }
 
@@ -136,7 +151,7 @@ border-radius: 5px;
 
 .pais{
     margin: 0 auto;
-    height: 30px;
+    min-height: 30px;
     background: linear-gradient(to right, #f2f2f235, #F2F2F2);;
     border-radius: 10px;
     margin-bottom: 3px;
@@ -153,8 +168,10 @@ border-radius: 5px;
 
 @media screen and (max-width:1060px) {
     #grupos{
+        height: 1100px;
+    }
+    .grupos-contenedor{
         height: 200vh;
-      
         grid-template-columns: repeat(2,270px);
         grid-template-rows: repeat(4, 230px);
    
@@ -164,10 +181,15 @@ border-radius: 5px;
     
     @media screen and (max-width:530px) {
         #grupos{
-            /* height: 400vh;
-            grid-template-columns: repeat(1,270px);
-            grid-template-rows: repeat(8, 230px);
-         */
+            height: 700px;
+            box-sizing: content-box;
+        }
+        
+        #grupos h3{
+            font-size: 3em;
+        }
+        .grupos-contenedor{
+            height: 700px;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -175,10 +197,11 @@ border-radius: 5px;
             justify-content: start;
             align-items: center;
             height: 100vh;
+            
            
          
         }
-        
+      
         .grupo{
             overflow: hidden;
             width: 65vw;
@@ -189,6 +212,10 @@ border-radius: 5px;
 
         .grupo:hover{
             flex-grow: 2 ;
+        }
+
+        .pais{
+            min-height: 30px;
         }
 
 

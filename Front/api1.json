@@ -1,0 +1,51 @@
+[
+    {
+        "nombre":"Argentina",
+        "flags": {
+            "png": "https://flagcdn.com/w320/ar.png",
+            "svg": "https://flagcdn.com/ar.svg"
+        }
+    },
+    {
+        "nombre":"Qatar",
+        "flags": {
+            "png": "https://flagcdn.com/w320/qa.png",
+            "svg": "https://flagcdn.com/qa.svg"
+        }
+    },
+    {
+        "nombre":"Ecuador",
+        "flags": {
+            "png": "https://flagcdn.com/w320/ec.png",
+            "svg": "https://flagcdn.com/ec.svg"
+        }
+    },
+    {
+        "nombre":"Senegal",
+        "flags": {
+            "png": "https://flagcdn.com/w320/sn.png",
+            "svg": "https://flagcdn.com/sn.svg"
+        }
+    },
+    {
+        "nombre":"Paises Bajos",
+        "flags": {
+            "png": "https://flagcdn.com/w320/nl.png",
+            "svg": "https://flagcdn.com/nl.svg"
+        }
+    },
+    {
+        "nombre":"Iran",
+        "flags": {
+            "svg": "https://flagcdn.com/ir.svg",
+            "png": "https://flagcdn.com/w320/ir.png"
+        }
+    },
+    {
+        "nombre":"Estados Unidos",
+        "flags": {
+            "svg": "https://flagcdn.com/us.svg",
+            "png": "https://flagcdn.com/w320/us.png"
+            }
+    }
+]

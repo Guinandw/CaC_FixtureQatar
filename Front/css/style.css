@@ -63,14 +63,14 @@ body{
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #500322, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
  /*COMIENZO ENCABEZADO */
 header{
     display: flex;
     position: sticky;
+    align-self: flex-start;
     min-height: 40px;
-    top:0;
+    top: 0;
     left: 0;
     background-color: var(--cuarto) ;
     border-bottom: 4px solid var(--terceario);
@@ -79,10 +79,8 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-
     padding: 10px 0;
     font-family: "Arabic Heavy";
-    
 }
 
 .logo{

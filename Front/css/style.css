@@ -52,7 +52,7 @@ PALETA DE COLORES
 }
 
 body{
-    
+
 margin: 0;
 background: #c31432;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #500322, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
@@ -285,19 +285,21 @@ border-radius: 5px;
             min-height: 30px;
         }
 
-
-    
 }
-
-
 
 /* FIN GRUPO */
 
+
+
 /* INICIO ESTADIOS */
 
+.divEstadio{
+    width: 100vw;
+}
 
 .estadios{
     display: grid;
+    width: 100%;
     grid-template-areas: "imgG info";
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;

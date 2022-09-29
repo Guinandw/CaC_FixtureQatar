@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Front/css/calendario.css">
+    <link rel="stylesheet" href="/Front/css/style.css"> 
+
+    <title>Calendario Mundial Qatar 2022</title>
+</head>
+<body class="gradient1">
+     <!-- /ENCABEZADO INICIO  -->
+    <header> 
+            <div class="logo">FIXTURE INTERACTIVO QATAR 2022</div>
+            <div class="menu">
+                <div class="boton"><a href="index.html#grupos">GRUPOS</a></div>
+                <div class="icono"><a href="index.html#grupos">I</a></div>
+                <div class="boton"><a href="estadios.html">ESTADIOS</a></div>
+                <div class="icono"><a href="estadios.html">I</a></div>
+                <div class="boton"><a href="fixture.html">FIXTURE</a></div>
+                <div class="icono"><a href="fixture.html">I</a></div>
+                <div class="boton"><a href="noticias.html">NOTICIAS</a></div>
+                <div class="icono"><a href="noticias.html">I</a></div>
+                <div class="boton"><a href="calendario.html">CALENDARIO</a></div>
+                <div class="icono"><a href="calendario.html">I</a></div>                   
+            </div>
+    </header>
+    <!--ENCABEZADO FIN  -->
+
+    
+<section id="calendario"><!-- Contenedor -->
+    
+    <div class="huso_cal"><!-- Selección de HUSO y tipo de visualizacion-->
+            <label for="huso">SELECCIONE EL HUSO HORARIO:</label>
+
+            <select name="huso" id="huso" class="selec_cal">
+                <option value="-12">-12:00</option>
+                <option value="-11">-11:00</option>
+                <option value="-10">-10:00</option>
+                <option value="-9">-09:00</option>
+                <option value="-8">-09:00</option>
+                <option value="-7">-07:00</option>
+                <option value="-6">-06:00</option>
+                <option value="-5">-05:00</option>
+                <option value="-4">-04:00</option>
+                <option value="-3">-03:00</option>
+                <option value="-2">-02:00</option>
+                <option value="-1">-01:00</option>
+                <option value="0"> 00:00</option>
+                <option value="1">+01:00</option>
+                <option value="2">+02:00</option>
+                <option value="3">+03:00</option>
+                <option value="4">+04:00</option>
+                <option value="5">+05:00</option>
+                <option value="6">+06:00</option>
+                <option value="7">+07:00</option>
+                <option value="8">+08:00</option>
+                <option value="9">+09:00</option>
+                <option value="10">+10:00</option>
+                <option value="11">+11:00</option>
+                <option value="12">+12:00</option>
+                <option value="13">+13:00</option>
+            </select>
+    </div>
+
+    <div class="conten_cal"><!-- Calendario por grupo -->
+        <div class="grupo_cal"> <div class="nom_grupo_cal"> GRUPO A </div><!-- GRUPO A -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/QAT.webp" alt="Qatar" class ="band_cal">
+                    Qatar vs Ecuador
+                    <img src="picture/bandera/ECU.webp" alt="Ecuador" class ="band_cal">
+                </div>
+                    <div class="estadio_cal"> Estadio Al Bayt </div>
+                    <div class="fecha_cal" id="fAp1"> 20/11/22 - 16:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/SEN.webp" alt="Senegal" class ="band_cal">
+                    Senegal vs Paises Bajos
+                    <img src="picture/bandera/NED.webp" alt="Paises Bajos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal" id="fAp2"> 21/11/22 - 16:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/QAT.webp" alt="Qatar" class ="band_cal">
+                    Qatar vs Senegal
+                    <img src="picture/bandera/SEN.webp" alt="Senegal" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal" id="fAp3"> 25/11/222 - 13:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ECU.webp" alt="Ecuador" class ="band_cal">
+                    Ecuador vs Paises Bajos
+                    <img src="picture/bandera/NED.webp" alt="Paises Bajos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Internacional Khalifa </div>
+                <div class="fecha_cal" id="fAp4"> 25/11/222 - 16:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/QAT.webp" alt="Qatar" class ="band_cal">
+                    Qatar vs Paises Bajos
+                    <img src="picture/bandera/NED.webp" alt="Paises Bajos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fAp5"> 29/11/222 - 15:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ECU.webp" alt="Ecuador" class ="band_cal">
+                    Ecuador vs Senegal
+                    <img src="picture/bandera/SEN.webp" alt="Senegal" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Internacional Khalifa </div>
+                <div class="fecha_cal" id="fAp6"> 29/11/222 - 15:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO B<!-- GRUPO B -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ENG.webp" alt="Inglaterra" class ="band_cal">
+                    Inglaterra vs Iran
+                    <img src="picture/bandera/IRN.webp" alt="Iran" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Internacional Khalifa </div>
+                <div class="fecha_cal" id="fBp1"> 21/11/22 - 13:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/USA.webp" alt="Estados Unidos" class ="band_cal">
+                    Estados Unidos vs Gales
+                    <img src="picture/bandera/WAL.webp" alt="Gales" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal" id="fBp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/IRN.webp" alt="Iran" class ="band_cal">
+                    Iran vs Gales
+                    <img src="picture/bandera/WAL.webp" alt="Gales" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal"  id="fBp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ENG.webp" alt="Inglaterra" class ="band_cal">
+                    Inglaterra vs Estados Unidos
+                    <img src="picture/bandera/USA.webp" alt="Estados Unidos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fBp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ENG.webp" alt="Inglaterra" class ="band_cal">
+                    Inglaterra vs Gales
+                    <img src="picture/bandera/WAL.webp" alt="Gales" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal"  id="fBp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/IRN.webp" alt="Iran" class ="band_cal">
+                    Iran vs Estados Unidos
+                    <img src="picture/bandera/USA.webp" alt="Estados Unidos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal"  id="fBp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO C<!-- GRUPO C -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ARG.webp" alt="Argentina" class ="band_cal">
+                    Argentina vs Arabia Saudita
+                    <img src="picture/bandera/KSA.webp" alt="Arabia Saudita" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fCp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/MEX.webp" alt="Mexico" class ="band_cal">
+                    Mexico vs Polonia
+                    <img src="picture/bandera/POL.webp" alt="Polonia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fCp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal"> <!-- Equipos (con bandera)-->
+                    <img src="picture/bandera/KSA.webp" alt="Arabia Saudita" class ="band_cal">
+                    Arabia Saudita vs Polonia
+                    <img src="picture/bandera/POL.webp" alt="Polonia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fCp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ARG.webp" alt="Argentina" class ="band_cal">
+                    Argentina vs Mexico
+                    <img src="picture/bandera/MEX.webp" alt="Mexico" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fCp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ARG.webp" alt="Argentina" class ="band_cal">
+                    Argentina vs Polonia
+                    <img src="picture/bandera/POL.webp" alt="Polonia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fCp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/KSA.webp" alt="Arabia Saudita" class ="band_cal">
+                    Arabia Saudita vs Mexico
+                    <img src="picture/bandera/MEX.webp" alt="Mexico" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fCp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO D<!-- GRUPO D -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/DEN.webp" alt="Dinamarca" class ="band_cal">
+                    Dinamarca vs Tunez
+                    <img src="picture/bandera/TUN.webp" alt="Tunez" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fDp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/FRA.webp" alt="Francia" class ="band_cal">
+                    Francia vs Australia
+                    <img src="picture/bandera/AUS.webp" alt="Australia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fDp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/AUS.webp" alt="Australia" class ="band_cal">
+                    Australia vs Tunez
+                    <img src="picture/bandera/TUN.webp" alt="Tunez" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fDp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/FRA.webp" alt="Francia" class ="band_cal">
+                    Francia vs Dinamarca
+                    <img src="picture/bandera/DEN.webp" alt="Dinamarca" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fDp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/AUS.webp" alt="Australia" class ="band_cal">
+                    Australia vs Dinamarca
+                    <img src="picture/bandera/DEN.webp" alt="Dinamarca" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fDp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/FRA.webp" alt="Francia" class ="band_cal">
+                    Francia vs Tunez
+                    <img src="picture/bandera/TUN.webp" alt="Tunez" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fDp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO E<!-- GRUPO E -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/GER.webp" alt="Alemania" class ="band_cal">
+                    Alemania vs Japon
+                    <img src="picture/bandera/JPN.webp" alt="Japon" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Internacinal Khalifa </div>
+                <div class="fecha_cal"  id="fEp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ESP.jpg" alt="España" class ="band_cal">
+                    España vs Costa Rica
+                    <img src="picture/bandera/CRC.webp" alt="Costa Rica" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal"  id="fEp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/CRC.webp" alt="Costa Rica" class ="band_cal">
+                    Costa Rica vs Japon
+                    <img src="picture/bandera/JPN.webp" alt="Japon" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal"  id="fEp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ESP.jpg" alt="España" class ="band_cal">
+                    España vs Alemania
+                    <img src="picture/bandera/GER.webp" alt="Alemania" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fEp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/ESP.jpg" alt="España" class ="band_cal">
+                    España vs Japon
+                    <img src="picture/bandera/JPN.webp" alt="Japon" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Internacinal Khalifa </div>
+                <div class="fecha_cal"  id="fEp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/CRC.webp" alt="Costa Rica" class ="band_cal">
+                    Costa Rica vs Alemania
+                    <img src="picture/bandera/GER.webp" alt="Alemania" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fEp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO F<!-- GRUPO F -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/MAR.webp" alt="Marruecos" class ="band_cal">
+                    Marruecos vs Croacia
+                    <img src="picture/bandera/CRO.webp" alt="Croacia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fFp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/BEL.webp" alt="Belgica" class ="band_cal">
+                    Belgica vs Canada
+                    <img src="picture/bandera/CAN.webp" alt="Canada" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal"  id="fFp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/BEL.webp" alt="Belgica" class ="band_cal">
+                    Belgica vs Marruecos
+                    <img src="picture/bandera/MAR.webp" alt="Marruecos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal"  id="fFp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/CAN.webp" alt="Canada" class ="band_cal">
+                    Canada vs Croacia
+                    <img src="picture/bandera/CRO.webp" alt="Croacia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Internacional Khalifa </div>
+                <div class="fecha_cal"  id="fFp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/BEL.webp" alt="Belgica" class ="band_cal">
+                    Belgica vs Croacia
+                    <img src="picture/bandera/CRO.webp" alt="Croacia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal"  id="fFp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/CAN.webp" alt="Canada" class ="band_cal">
+                    Canada vs Marruecos
+                    <img src="picture/bandera/MAR.webp" alt="Marruecos" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal"  id="fFp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO G <!-- GRUPO G -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/SUI.webp" alt="Suiza" class ="band_cal">
+                    Suiza vs Camerun
+                    <img src="picture/bandera/CMR.webp" alt="Camerun" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fGp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/BRA.webp" alt="Brasil" class ="band_cal">
+                    Brasil vs Serbia
+                    <img src="picture/bandera/SRB.webp" alt="Serbia" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fGp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/SRB.webp" alt="Serbia" class ="band_cal">
+                    Serbia vs Camerun
+                    <img src="picture/bandera/CMR.webp" alt="Camerun" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fGp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/BRA.webp" alt="Brasil" class ="band_cal">
+                    Brasil vs Suiza
+                    <img src="picture/bandera/SUI.webp" alt="Suiza" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fGp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/BRA.webp" alt="Brasil" class ="band_cal">
+                    Brasil vs Camerun
+                    <img src="picture/bandera/CMR.webp" alt="Camerun" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fGp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/SRB.webp" alt="Serbia" class ="band_cal">
+                    Serbia vs Suiza
+                    <img src="picture/bandera/SUI.webp" alt="Suiza" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fGp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> GRUPO H <!-- GRUPO H -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/URU.webp" alt="Uruguay" class ="band_cal">
+                    Uruguay vs Corea del Sur
+                    <img src="picture/bandera/KOR.webp" alt="Corea del Sur" class ="band_cal">
+                </div>
+                <div  class="estadio_cal">Estadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fHp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/POR.webp" alt="Portugal" class ="band_cal">
+                    Portugal vs Ghana
+                    <img src="picture/bandera/GHA.webp" alt="Ghana" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fHp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/GHA.webp" alt="Ghana" class ="band_cal">
+                    Ghana vs Corea del Sur
+                    <img src="picture/bandera/KOR.webp" alt="Corea del Sur" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fHp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/POR.webp" alt="Portugal" class ="band_cal">
+                    Portugal vs Uruguay
+                    <img src="picture/bandera/URU.webp" alt="Uruguay" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fHp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/POR.webp" alt="Portugal" class ="band_cal">
+                    Portugal vs Corea del Sur
+                    <img src="picture/bandera/KOR.webp" alt="Corea del Sur" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Ciudad Educación </div>
+                <div class="fecha_cal"  id="fHp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equip_cal">
+                    <img src="picture/bandera/GHA.webp" alt="Ghana" class ="band_cal">
+                    Ghana vs Uruguay
+                    <img src="picture/bandera/URU.webp" alt="Uruguay" class ="band_cal">
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fHp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+    </div>
+    <div class="conten_cal">
+        <div class="grupo_cal"> OCTAVOS P1 (OP1) 
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo A</div>
+                    <div>Segundo Grupo B</div>
+                </div>
+                <div  class="estadio_cal"> Estadio Internacinal Khalifa </div>
+                <div class="fecha_cal"  id="fOp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P2 (OP2) 
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo C</div>
+                    <div>Segundo Grupo D</div>
+                </div>
+                <div  class="estadio_cal"> Estadio Ahmad Bin Ali </div>
+                <div class="fecha_cal"  id="fOp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P3 (OP3) 
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo D</div>
+                    <div>Segundo Grupo C</div>
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal"  id="fOp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P4 (OP4) 
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo B</div>
+                    <div>Segundo Grupo A</div>
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fOp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P5 (OP5) 
+            <div class="partido"> <!-- Partido 5 -->
+                <div class="equipo_cal">
+                    <div>Primero Grupo E</div>
+                    <div>Segundo Grupo F</div>
+                </div>
+                <div  class="estadio_cal"> Estadio Al Janoub </div>
+                <div class="fecha_cal"  id="fOp5"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P6 (OP6) 
+            <div class="partido"> <!-- Partido 6 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo G</div>
+                    <div>Segundo Grupo H</div>
+                </div>
+                <div  class="estadio_cal"> Estadio 974 </div>
+                <div class="fecha_cal"  id="fOp6"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P7 (OP7) 
+            <div class="partido"> <!-- Partido 7 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo F</div>
+                    <div>Segundo Grupo E</div>
+                </div>
+                <div  class="estadio_cal"> stadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fOp7"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> OCTAVOS P8 (OP8) 
+            <div class="partido"> <!-- Partido 8 -->
+                <div class="equipo_cal"> 
+                    <div>Primero Grupo H</div>
+                    <div>Segundo Grupo G</div>
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fOp8"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+    </div>
+    <div class="conten_cal">
+        <div class="grupo_cal"> CUARTOS P1 (CP1) 
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equipo_cal">
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Ciudad Educacion </div>
+                <div class="fecha_cal"  id="fQp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> CUARTOS P2 (CP2)
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fQp2"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> CUARTOS P3 (CP3)
+            <div class="partido"> <!-- Partido 3 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Al Thumama </div>
+                <div class="fecha_cal"  id="fQp3"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> CUARTOS P4 (CP4)
+            <div class="partido"> <!-- Partido 4 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fQp4"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+    </div>
+    <div class="conten_cal">
+        <div class="grupo_cal"> SEMIFINAL P1 (SFP1) <!-- SEMIFINALES -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal">Estadio Lusail </div>
+                <div class="fecha_cal"  id="fSp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+        <div class="grupo_cal"> SEMIFINAL P2 (SFP2)
+            <div class="partido"> <!-- Partido 2 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Al Bayt </div>
+                <div class="fecha_cal"  id="fSp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+    </div>
+    <div class="conten_cal">
+        <div class="grupo_cal"> 3er PUESTO <!-- 3er PUESTO -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Internacional Khalifa </div>
+                <div class="fecha_cal"  id="f3p1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+    </div>
+    <div class="conten_cal">
+        <div class="grupo_cal"> FINAL <!-- FINAL -->
+            <div class="partido"> <!-- Partido 1 -->
+                <div class="equipo_cal"> 
+                
+                </div>
+                <div  class="estadio_cal"> Estadio Lusail </div>
+                <div class="fecha_cal"  id="fLp1"> 21/11/22 - 19:00 (Huso 00:00) </div>
+            </div>
+        </div>
+    </div>
+
+    <div><!-- Calendario por fecha -->
+        
+    </div>
+
+</section>
+
+</body>
+</html>

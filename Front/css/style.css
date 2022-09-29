@@ -76,6 +76,7 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     box-sizing: border-box;
     padding: 10px 0;
     font-family: "Arabic Heavy";
+    z-index: 10;
 }
 
 .logo{

@@ -203,12 +203,12 @@ a {
 }
 
 .grupo{
-height: 80%;
-box-sizing: content-box;
-background-color: #510509;
-margin: 0 10px 10px 10px;
-padding-bottom: 20px;
-border-radius: 5px;
+    height: 80%;
+    box-sizing: content-box;
+    background-color: #510509;
+    margin: 0 10px 10px 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
 
 .contenedorPaises{
@@ -293,62 +293,6 @@ border-radius: 5px;
 
 /* INICIO ESTADIOS */
 
-.divEstadio{
-    width: 100vw;
-}
-
-.estadios{
-    display: grid;
-    width: 100%;
-    grid-template-areas: "imgG info";
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
-}
-.estadios-nombre{
-    grid-area: info;
-    font-size: 4rem;
-    text-align: center;
-    margin: 0rem;
-    color: var(--cuarto);
-    font-family: "Arabic Medium";
-}
-.estdios-imgGrande{
-    grid-area: imgG;
-    width: 60rem;
-    height: 35rem;
-}
-.estdios-imgChico{
-    grid-area: imgC;
-    width: 26rem;
-    height: 26rem;
-    margin-top: 6rem;
-    margin-left: -13rem;
-}
-.estadios-infoYFoto{
-    grid-area: info;
-    display: grid;
-    grid-template-areas: "imgC informacion";
-}
-.estadios-info{
-    grid-area: informacion;
-    margin-right: 5rem;
-    margin-left: 15rem;
-    margin-top: 2rem;
-}
-.estadios-datos1{
-    margin-top: 3rem;
-}
-.estadios-datos1, .estadios-datos2, .estadios-datos3{
-    text-align:justify;
-    font-size: 1.3rem;
-    color: var(--cuarto);
-}
-.linea {
-    border-top: 1px solid var(--cuarto);
-    height: 2px;
-    padding: 0;
-    margin: 20px auto 0 auto;
-  }
 /* FIN ESTADIOS */ 
 
 

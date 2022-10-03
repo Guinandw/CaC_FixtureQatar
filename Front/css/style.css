@@ -314,7 +314,7 @@ overflow: hidden;
     font-weight: 600;
     color: black;
     text-align: center;
-    background: linear-gradient(90deg,  rgba(0, 0, 0, 0.148) 60%, rgba(0, 0, 0, 0.365) 60%);;
+    background: linear-gradient(90deg,  rgba(0, 0, 0, 0.148) 50%, rgba(0, 0, 0, 0.365) 60%);;
 
 }
 .imgPre{

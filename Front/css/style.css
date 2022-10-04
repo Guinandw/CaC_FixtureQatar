@@ -107,6 +107,7 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
 }
 
 
+
 .boton {
     display: flex;
     align-items:center;
@@ -203,6 +204,7 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     }
     .banner1, .banner2, .banner3{
         position: absolute;
+        font-size: 3rem;
     }
     .banner1{
         top: 20%;
@@ -223,10 +225,10 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     }
 
     .banner3{
-        top: 80%;
-        left: 80%;
-        transform: translate(-50%, -50%);
-        animation-name: anim;
+        top: 70%;
+        left: 70%;
+        font-size: 4rem;
+        animation-name: anim2;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
@@ -244,6 +246,14 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
         }
         100% {
           transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes anim2 {
+        0% {
+          opacity: 0;
+        }
+        100% {
           opacity: 1;
         }
       }

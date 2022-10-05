@@ -268,14 +268,6 @@ a {
            
          
         }
-      
-        .grupo{
-            overflow: hidden;
-            width: 65vw;
-            max-height: 200px;
-            height: 20px;
-            transition: all 1s;
-        }
 
         .grupo:hover{
             flex-grow: 2 ;

@@ -1,0 +1,92 @@
+a {
+    color: inherit!important;
+    text-decoration: none!important;
+}
+.contenedorPaises span{
+    margin-left: 0;
+}
+.grupos-contenedor{
+    height: auto!important;
+}
+.botonFix, .octavos, .cuartos, .semis{
+    width: 100%;
+    text-align: left;
+}
+#cruces{
+    display: grid;
+    grid-template-areas: "1"  "2";
+
+}
+#primerCruce, #tercerCruce, #quintoCruce, #septimoCruce{
+    grid-area: 1;
+}
+#segundoCruce, #cuartoCruce, #sextoCruce, #octavoCruce{
+    grid-area: 2;
+}
+#grupos{
+    height: auto!important;
+}
+.fixtureGrupos div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cruces8Vos, #cruces4tos{
+    display: grid;
+    grid-template-areas: "1 2";
+}
+h4{
+    width: 90%;
+}
+.final{
+    width: 60%;
+    text-align: left;
+}
+.blanco{
+    color: #f2f2f2;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1050px){
+    #cruces{
+        grid-template-areas: 
+        "cruce1 cruce2"
+        "cruce3 cruce4"
+        "cruce5 cruce6" 
+        "cruce7 cruce8" !important;
+        grid-template-columns: 1fr 1fr;
+    } 
+
+    #primerCruce{
+        grid-area: cruce1;
+    }
+    #tercerCruce{
+        grid-area: cruce3;
+    }
+    #quintoCruce{
+        grid-area: cruce5;
+    }
+    #septimoCruce{
+        grid-area: cruce7;
+    }
+    #segundoCruce{
+        grid-area: cruce2;
+    }
+    #cuartoCruce{
+        grid-area: cruce4;
+    }
+    #sextoCruce{
+        grid-area: cruce6;
+    }
+    #octavoCruce{
+        grid-area: cruce8;
+    }
+}
+@media only screen and (max-width: 539px){
+
+    #cruces, #cruces8Vos, #cruces4tos{
+        display: flex;
+        flex-direction: column;
+    } 
+}

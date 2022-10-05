@@ -16,7 +16,7 @@ document.getElementById("idheader").innerHTML =  `
     <a href="/Front/html/fixture.html">FIXTURE</a>  
     <a href="/Front/html/estadios.html">ESTADIOS</a>
     <a href="/Front/html/grupos.html">GRUPOS</a>
-    <a href="index.html">INICIO</a>
+    <a href="/Front/index.html">INICIO</a>
 </div>`;
 
 document.getElementById("idfooter").innerHTML =  `

@@ -12,10 +12,10 @@ document.getElementById("idheader").innerHTML =  `
 <div class="logo">FIXTURE INTERACTIVO QATAR 2022</div>            
 <div class="menu" id="idMenu">
     <a href="javascript:void(0);" class="icono_h" onclick="hamburguesa()"><i class="fa-solid fa-bars fa-xl"></i></a>    
-    <a href="calendario.html">CALENDARIO</a>
-    <a href="fixture.html">FIXTURE</a>  
-    <a href="estadios.html">ESTADIOS</a>
-    <a href="index.html#grupos">GRUPOS</a>
+    <a href="/Front/html/calendario.html">CALENDARIO</a>
+    <a href="/Front/html/fixture.html">FIXTURE</a>  
+    <a href="/Front/html/estadios.html">ESTADIOS</a>
+    <a href="/Front/html/grupos.html">GRUPOS</a>
     <a href="index.html">INICIO</a>
 </div>`;
 

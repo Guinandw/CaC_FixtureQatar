@@ -89,7 +89,9 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
     float: left;
     width: 80%;
 }
-
+a:hover{
+    color: #F2F2F2!important;
+}
 
 .menu a {
     color: inherit;

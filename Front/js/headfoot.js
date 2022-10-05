@@ -19,8 +19,12 @@ document.getElementById("idheader").innerHTML =  `
     <a href="index.html">INICIO</a>
 </div>`;
 
-document.getElementById("idfooter").innerHTML =  `<div class="logo">FIXTURE INTERACTIVO QATAR 2022</div>            
+document.getElementById("idfooter").innerHTML =  `
+<div class="logo">FIXTURE INTERACTIVO QATAR 2022</div>            
 <div class="menu">
-               
+<a href="https://es-la.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+<a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl"></i></a>
 </div>`;
 

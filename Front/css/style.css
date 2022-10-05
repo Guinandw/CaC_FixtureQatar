@@ -363,14 +363,6 @@ background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, F
            
          
         }
-      
-        .grupo{
-            overflow: hidden;
-            width: 65vw;
-            max-height: 200px;
-            height: 20px;
-            transition: all 1s;
-        }
 
         .grupo:hover{
             flex-grow: 2 ;

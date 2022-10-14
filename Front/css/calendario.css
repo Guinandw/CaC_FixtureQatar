@@ -92,7 +92,7 @@
   font-size: 22pt;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .texto{
     display: none;
   }

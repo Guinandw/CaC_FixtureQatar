@@ -27,7 +27,7 @@ fetch('https://api-football-v1.p.rapidapi.com/v3/teams?id=33', options)
 
 	 
 	
-	fetch(`https://apiv2.allsportsapi.com/football/?&met=Teams&teamName=morocco&APIkey=${key}`)
+	fetch(`https://apiv2.allsportsapi.com/football/?&met=Teams&teamName=Daehan Minguk&APIkey=${key}`)
       .then(response =>response.json())
       .then((equipos) => {
           console.log(equipos)
@@ -39,8 +39,6 @@ fetch('https://api-football-v1.p.rapidapi.com/v3/teams?id=33', options)
 
  
 /* 
-ID 1, turquia
-team_key: 2, team_name: 'Switzerland',
 
 
 team_key: 538, team_name: 'Qatar'
@@ -70,7 +68,17 @@ team_key: 540, team_name: 'Japan',
 
 team_key: 6, team_name: 'Belgium',
 team_key: 512, team_name: 'Canada',
+team_key: 717, team_name: 'Morocco',
+team_key: 14, team_name: 'Croatia',
 
+team_key: 531, team_name: 'Brazil',
+team_key: 675, team_name: 'Serbia',
+team_key: 2, team_name: 'Switzerland',
+team_key: 530, team_name: 'Cameroon',
+
+team_key: 23, team_name: 'Portugal',
+team_key: 725, team_name: 'Ghana',
+team_key: 539, team_name: 'Uruguay',
 
 
 

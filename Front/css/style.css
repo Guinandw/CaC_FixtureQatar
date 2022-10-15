@@ -114,7 +114,7 @@ a:hover{
 
 /* FINAL ENCABEZADO*/
 
-
+/*INICIO PRESENTACION */
 .contenedor_pre{
 
     width: 80vw;
@@ -321,21 +321,51 @@ a:hover{
         }
 
 }
+/* modal */
+.modal-cubierta{
+    width: 90vw;
+    height: 80vh;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    z-index: 10;
+    background-color: white;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: -10;
+}
+.modal-on{
+    visibility: visible;
+    z-index: 10;
+}
+.modal-cubierta h3, h4{
+    text-align: center;
+}
+
+.equipo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img-jugador{
+    width: 50px;
+    height: 50px;   
+}
+
+.cerrar-modal{
+    position: absolute;
+    bottom: 3vh;
+    left: 47%;
+    background-color: var(--alter2);
+    border-radius: 10px;
+    color: var(--cuarto);
+}
 
 /* FIN GRUPO */
 
 
 
-/* INICIO PRESENTACION */
-
-
-
-/* INICIO FIXTURE */
-
-/* #fixture{
-    height: 100vh;
-    background-color: var(--alter);
-} */
 
 .huso_cal {
     display: flex;

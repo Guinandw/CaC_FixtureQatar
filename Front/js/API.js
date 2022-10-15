@@ -1,41 +1,46 @@
-/* const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'cb25dbdc9dmshc79890770d8590ep1aca28jsndeef4ef06af0',
-		'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
-	}
-};
 
-fetch('https://api-football-v1.p.rapidapi.com/v3/teams?id=33', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
- */
-	let key = "2c6e53892b4fd81a84173e6497aecc629135c4a2003d6dd8ba8edf90a02f0d3a";
 	
-	/* 	
-		fetch(`https://apiv2.allsportsapi.com/football/?met=Countries&APIkey=${key}`)
+	
+	
+	let key = "c94baaa2d916d6b290cd29822678abf17832efd7c6cf7b7dc5976ee777ed7760";
+	const modal = document.querySelector(".modal-cubierta");
+	
+	//esta funcion abre el modal y pide la info a la API.
+	function showTeam(teamID){
+		//console.log(teamID)
+		modal.classList.add('modal-on')
+	fetch(`https://apiv2.allsportsapi.com/football/?&met=Teams&teamId=${teamID}=&APIkey=${key}`)
       .then(response =>response.json())
-      .then((equipos) => {
-          console.log(equipos)
-      });
-			 */
-		
-		
- 
-	
-
-	 
-	
-	fetch(`https://apiv2.allsportsapi.com/football/?&met=Teams&teamName=Daehan Minguk&APIkey=${key}`)
-      .then(response =>response.json())
-      .then((equipos) => {
-          console.log(equipos)
-		  console.log(equipos.result[0].team_name)
-       //  fucionEquipo(
-      //  equipos.result[0].team_logo,
-      //  equipos.result[0].team_name) 
+      .then((equipo) => {
+          	console.log(equipo);
+		 	console.log(equipo.result[0].players.length);
+			detalleEquipo(equipo);
       }); 
+	}
+
+	function hideTeam(){
+		modal.classList.remove('modal-on')
+	}
+
+	function detalleEquipo(equipo){
+		
+		var tarjetas= `
+		<div class="modal-container">
+            <h3 name="pais">PAIS: ${equipo.result[0].team_name}</h3>
+            <h4 class="coach">ENTRENADOR: ${equipo.result[0].coaches[0].coach_name}  </h4>`
+			for (let i = 0; i < equipo.result[0].players.length; i++) {
+				tarjetas +=
+				`<div class="jugadores">
+                <img src="${equipo.result[0].players[i].player_image}" alt="Foto de ${equipo.result[0].players[i].player_name}" class="img-jugador">
+                <p class="nombreJugador">${equipo.result[0].players[i].player_name}</p>
+                <p class="posicion">${equipo.result[0].players[i].player_type}</p>
+            </div>`
+				
+			}
+
+			document.querySelector('.modal-cubierta').innerHTML = tarjetas
+		   
+	}
 
  
 /* 
@@ -82,4 +87,182 @@ team_key: 539, team_name: 'Uruguay',
 
 
 
+*/
+
+/*
+{success: 1, result: Array(1)}
+result
+: 
+Array(1)
+0
+: 
+coaches
+: 
+Array(1)
+0
+: 
+coach_age
+: 
+null
+coach_country
+: 
+null
+coach_name
+: 
+"L. van Gaal"
+[[Prototype]]
+: 
+Object
+length
+: 
+1
+[[Prototype]]
+: 
+Array(0)
+players
+: 
+Array(26)
+0
+: 
+{player_key: 3263882609, player_name: 'J. Cillessen', player_number: '', player_country: null, player_type: 'Goalkeepers', …}
+1
+: 
+{player_key: 2076522167, player_name: 'M. Flekken', player_number: '', player_country: null, player_type: 'Goalkeepers', …}
+2
+: 
+{player_key: 3067561041, player_name: 'K. Scherpen', player_number: '', player_country: null, player_type: 'Goalkeepers', …}
+3
+: 
+{player_key: 1285504325, player_name: 'N. Aké', player_number: '', player_country: null, player_type: 'Defenders', …}
+4
+: 
+{player_key: 797046591, player_name: 'D. Blind', player_number: '', player_country: null, player_type: 'Defenders', …}
+5
+: 
+{player_key: 2449761154, player_name: 'M. de Ligt', player_number: '', player_country: null, player_type: 'Defenders', …}
+6
+: 
+{player_key: 2665071992, player_name: 'S. de Vrij', player_number: '', player_country: null, player_type: 'Defenders', …}
+7
+: 
+{player_key: 3215091168, player_name: 'D. Dumfries', player_number: '', player_country: null, player_type: 'Defenders', …}
+8
+: 
+{player_key: 196906865, player_name: 'H. Hateboer', player_number: '', player_country: null, player_type: 'Defenders', …}
+9
+: 
+{player_key: 862847919, player_name: 'T. Malacia', player_number: '', player_country: null, player_type: 'Defenders', …}
+10
+: 
+{player_key: 2416069962, player_name: 'B. Martins Indi', player_number: '', player_country: null, player_type: 'Defenders', …}
+11
+: 
+{player_key: 2858897941, player_name: 'J. Teze', player_number: '', player_country: null, player_type: 'Defenders', …}
+12
+: 
+{player_key: 3130336844, player_name: 'J. Timber', player_number: '', player_country: null, player_type: 'Defenders', …}
+13
+: 
+{player_key: 906522436, player_name: 'V. van Dijk', player_number: '', player_country: null, player_type: 'Defenders', …}
+14
+: 
+player_age
+: 
+"25"
+player_country
+: 
+null
+player_goals
+: 
+"0"
+player_image
+: 
+"https://apiv2.allsportsapi.com/logo/players/57744_f-de-jong.jpg"
+player_key
+: 
+2377882003
+player_match_played
+: 
+"4"
+player_name
+: 
+"F. de Jong"
+player_number
+: 
+""
+player_red_cards
+: 
+"0"
+player_type
+: 
+"Midfielders"
+player_yellow_cards
+: 
+"1"
+[[Prototype]]
+: 
+Object
+15
+: 
+{player_key: 1180371369, player_name: 'D. Klaassen', player_number: '', player_country: null, player_type: 'Midfielders', …}
+16
+: 
+{player_key: 3842200340, player_name: 'T. Koopmeiners', player_number: '', player_country: null, player_type: 'Midfielders', …}
+17
+: 
+{player_key: 1355371500, player_name: 'J. Schouten', player_number: '', player_country: null, player_type: 'Midfielders', …}
+18
+: 
+{player_key: 1652829940, player_name: 'G. Til', player_number: '', player_country: null, player_type: 'Midfielders', …}
+19
+: 
+{player_key: 4060197324, player_name: 'S. Berghuis', player_number: '', player_country: null, player_type: 'Forwards', …}
+20
+: 
+{player_key: 2375441316, player_name: 'S. Bergwijn', player_number: '', player_country: null, player_type: 'Forwards', …}
+21
+: 
+{player_key: 2003280452, player_name: 'M. Depay', player_number: '', player_country: null, player_type: 'Forwards', …}
+22
+: 
+{player_key: 157543942, player_name: 'C. Gakpo', player_number: '', player_country: null, player_type: 'Forwards', …}
+23
+: 
+{player_key: 2404983797, player_name: 'V. Janssen', player_number: '', player_country: null, player_type: 'Forwards', …}
+24
+: 
+{player_key: 685941965, player_name: 'N. Lang', player_number: '', player_country: null, player_type: 'Forwards', …}
+25
+: 
+{player_key: 4166974286, player_name: 'W. Weghorst', player_number: '', player_country: null, player_type: 'Forwards', …}
+length
+: 
+26
+[[Prototype]]
+: 
+Array(0)
+team_key
+: 
+10
+team_logo
+: 
+"https://apiv2.allsportsapi.com/logo/10_netherlands.jpg"
+team_name
+: 
+"Netherlands"
+[[Prototype]]
+: 
+Object
+length
+: 
+1
+[[Prototype]]
+: 
+Array(0)
+success
+: 
+1
+[[Prototype]]
+: 
+Object
 */

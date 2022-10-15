@@ -303,13 +303,25 @@ header {
             justify-content: start;
             align-items: center;
             height: 100vh;
-            
+           
            
          
         }
+        .grupo{
+            overflow: hidden;
+            width: 65vw;
+            max-height: 200px;
+            height: 20px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
 
         .grupo:hover{
             flex-grow: 2 ;
+            transition-property: all;
+            transition-duration: 1s;
+            min-height: 200px;
         }
 
         .pais{

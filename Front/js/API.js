@@ -25,23 +25,36 @@
 	function detalleEquipo(equipo){
 		
 		var tarjetas= `
-		<div class="modal-container">
-            <h3 name="pais">PAIS: ${equipo.result[0].team_name}</h3>
-            <h4 class="coach">ENTRENADOR: ${equipo.result[0].coaches[0].coach_name}  </h4>`
+		
+            <h3>PAIS: ${equipo.result[0].team_name}</h3>
+            <h4>ENTRENADOR: ${equipo.result[0].coaches[0].coach_name}  </h4>
+			<div class="contenedor-jugadores">`;
 			for (let i = 0; i < equipo.result[0].players.length; i++) {
 				tarjetas +=
-				`<div class="jugadores">
+				`<div class="tarjeta-jugador">
                 <img src="${equipo.result[0].players[i].player_image}" alt="Foto de ${equipo.result[0].players[i].player_name}" class="img-jugador">
                 <p class="nombreJugador">${equipo.result[0].players[i].player_name}</p>
-                <p class="posicion">${equipo.result[0].players[i].player_type}</p>
+                <p class="posicion">${traductor(equipo.result[0].players[i].player_type)}</p>
             </div>`
 				
 			}
-
+			tarjetas += '</div> <button class="cerrar-modal" onclick="hideTeam()">CERRAR</button>';
 			document.querySelector('.modal-cubierta').innerHTML = tarjetas
 		   
 	}
-
+	function traductor(posicion){
+		var posEsp;
+		if(posicion === 'Defenders'){
+			posEsp = 'Defensor'
+		}else if(posicion === 'Midfielders'){
+			posEsp = 'Mediocampista'
+		}else if(posicion === 'Goalkeepers'){
+			posEsp = 'Arquero'
+		}else if(posicion === 'Forwards'){
+				posEsp = 'Delantero'
+		}
+		return posEsp;
+	}
  
 /* 
 

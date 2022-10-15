@@ -21,7 +21,7 @@ document.getElementById("idheader").innerHTML =  `
 
 document.getElementById("idfooter").innerHTML =  `
 <div class="logo">FIXTURE INTERACTIVO QATAR 2022</div>            
-<div class="menu">
+<div class="menu_f">
 <a href="https://es-la.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
 <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>

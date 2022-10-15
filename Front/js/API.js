@@ -18,10 +18,12 @@
       }); 
 	}
 
+	//oculta la tarjeta y vacia el contenido que se habia cargado anteriormente
 	function hideTeam(){
-		modal.classList.remove('modal-on')
+		modal.classList.remove('modal-on') 
+		document.querySelector('.modal-cubierta').innerHTML = ''
 	}
-
+	// es el encargado de hacer cada una de las tarjetas y rellena el modal
 	function detalleEquipo(equipo){
 		
 		var tarjetas= `
@@ -32,9 +34,12 @@
 			for (let i = 0; i < equipo.result[0].players.length; i++) {
 				tarjetas +=
 				`<div class="tarjeta-jugador">
-                <img src="${equipo.result[0].players[i].player_image}" alt="Foto de ${equipo.result[0].players[i].player_name}" class="img-jugador">
-                <p class="nombreJugador">${equipo.result[0].players[i].player_name}</p>
-                <p class="posicion">${traductor(equipo.result[0].players[i].player_type)}</p>
+                <div class="img-container">
+				<img src="${equipo.result[0].players[i].player_image}" 
+				alt="Foto de ${equipo.result[0].players[i].player_name}" class="img-jugador">
+				</div>
+                <p class="nombreJugador .arabicBolt">${equipo.result[0].players[i].player_name}</p>
+                <p class="posicion .arabicBolt">${traductor(equipo.result[0].players[i].player_type)}</p>
             </div>`
 				
 			}
@@ -42,6 +47,8 @@
 			document.querySelector('.modal-cubierta').innerHTML = tarjetas
 		   
 	}
+
+	//como la info de la API viene en ingles, se traducen al español.
 	function traductor(posicion){
 		var posEsp;
 		if(posicion === 'Defenders'){

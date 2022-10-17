@@ -91,6 +91,7 @@ header {
 }
 
 .menu a:hover {
+    color: var(--cuarto);
     background: var(--rojo);
     clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
 }

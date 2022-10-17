@@ -14,7 +14,6 @@
 }
 .grupos-contenedor{
     padding-top: 20px; /*el padding top es de la misma altura que el header + 20px*/
-    /*height: 100vh;*/
     display: grid;
     grid-template-columns: repeat(4,270px);
     grid-template-rows: repeat(2,230px);
@@ -34,15 +33,13 @@
 }
 
 .grupo{
-    /*height: 80%;*/
     box-sizing: content-box;
     background: #510509;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #500322,#260108);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #510509, #260108); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0 10px 10px 10px;
     clip-path: polygon(0% 50%, 2% 1%, 50% 0%, 98% 1%, 100% 50%, 98% 99%, 50% 100%, 2% 99%);
-    /*padding-bottom: 20px;
-    border-radius: 5px;*/
+
 }
 
 .contenedorPaises{
@@ -55,7 +52,6 @@
     background: linear-gradient(to right, #f2f2f235, #F2F2F2);
     clip-path: polygon(0% 50%, 2% 1%, 50% 0%, 98% 1%, 100% 50%, 98% 99%, 50% 100%, 2% 99%);
     border: none;
-    /*border-radius: 10px;*/
     margin-bottom: 3px;
     text-transform: uppercase;
 }
@@ -79,7 +75,6 @@
     padding-bottom: 50px;
     position: absolute;
     top: 15vh;
-    /*left: 30px;*/
     background-color: var(--alter2);
     border-radius: 10px;
     visibility: hidden;
@@ -155,7 +150,7 @@
         height: 1100px;
     }
     .grupos-contenedor{
-        /*height: 200vh;*/
+       
         grid-template-columns: repeat(2,270px);
         grid-template-rows: repeat(4, 230px);
     }
@@ -163,16 +158,15 @@
     
 @media screen and (max-width:530px) {
     #grupos{
-        /*height: 700px;*/
+       
         box-sizing: content-box;
     }
     #grupos h3{
-        /*font-size: 3em;*/
         font-size: 10vw;
         letter-spacing:3vw;
     }
     #grupos h4{
-        /*font-size: 3em;*/
+      
         font-size: 5vw;
     }
     .grupos-contenedor{
@@ -180,10 +174,10 @@
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        /*padding-top: 20px;*/
+      
         justify-content: start;
         align-items: center;
-        /*height: 100vh;*/
+       
     }
     .grupo{
         overflow: hidden;

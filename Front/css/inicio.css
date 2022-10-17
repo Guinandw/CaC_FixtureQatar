@@ -1,0 +1,103 @@
+
+#presentacionMascota{
+    margin-top: 5rem;
+}
+.mascotaDiv, .pelotaDiv{
+    display: grid;
+    grid-template-areas: "info img";
+    grid-template-columns: 1fr auto;
+}
+.mascotaLaeeb{
+    width: auto;
+    height: 700px;
+    grid-area: img;
+    margin: 1rem;
+}
+.mascotaInformacion, .pelotaInformacion{
+    grid-area: info;
+}
+.tituloMascota, .tituloPelota{
+    box-sizing: content-box;
+    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #F2F2F2;
+    border-bottom: 0.5px solid #F2F2F2 ;
+    margin: 0;
+    padding: 10px;
+    font-size: 50px;
+}
+.infoMascota, .infoPelota{
+    box-sizing: content-box;
+    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
+    color: #F2F2F2;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+.divImg{
+    grid-area: img;
+}
+.pelotaImg, .pelotaImgMessi{
+    height: 700px;
+    width: 743px;
+    margin: 1rem;
+}
+.pelotaImg{
+    display: flex;
+}
+.pelotaImgMessi{
+    display: none;
+}
+.divImg:hover .pelotaImgMessi {
+    display: block;
+}
+.divImg:hover .pelotaImg {
+    display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1355px){
+    .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
+        width: 500px;
+        margin-right: 0rem;
+    }
+}
+@media only screen and (max-width: 980px){
+    .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
+        width: 400px;
+        height: 600px;
+        margin-right: 1rem;
+    }
+    .mascotaDiv, .pelotaDiv{
+        width: auto;
+    }
+    .infoMascota, .infoPelota{
+        font-size: 15px;
+    }
+    .tituloMascota, .tituloPelota{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
+        width: 300px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
+        width: 360px;
+        height: 500px;
+    }
+    .mascotaDiv, .pelotaDiv{
+        display: grid;
+        grid-template-areas: "info" "img";
+        grid-template-rows: 1fr auto;
+    }
+}
+@media only screen and (max-width: 375px){
+    .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
+        width: 300px;
+        height: 500px;
+    }
+}

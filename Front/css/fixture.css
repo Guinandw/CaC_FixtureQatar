@@ -12,7 +12,7 @@
 #cruces{
     display: grid;
     grid-template-areas: "1"  "2";
-
+    padding: 20px;
 }
 #primerCruce, #tercerCruce, #quintoCruce, #septimoCruce{
     grid-area: 1;

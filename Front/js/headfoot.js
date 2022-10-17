@@ -1,22 +1,22 @@
 /* Menu Hamburguesa */
 function hamburguesa() {
-    var x = document.getElementById("idMenu");
-    if (x.className === "menu") {
-      x.className += " responsive";
-    } else {
-      x.className = "menu";
-    }
+  var x = document.getElementById("idMenu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
   }
+}
 
 document.getElementById("idheader").innerHTML =  `
 <div class="logo">FIXTURE INTERACTIVO QATAR 2022</div>            
 <div class="menu" id="idMenu">
-    <a href="javascript:void(0);" class="icono_h" onclick="hamburguesa()"><i class="fa-solid fa-bars fa-xl"></i></a>    
-    <a href="/Front/html/calendario.html">CALENDARIO</a>
-    <a href="/Front/html/fixture.html">FIXTURE</a>  
-    <a href="/Front/html/estadios.html">ESTADIOS</a>
-    <a href="/Front/html/grupos.html">GRUPOS</a>
-    <a href="/Front/index.html">INICIO</a>
+  <a href="javascript:void(0);" class="icono_h" onclick="hamburguesa()"><i class="fa-solid fa-bars fa-xl"></i></a>    
+  <a href="/Front/html/calendario.html">CALENDARIO</a>
+  <a href="/Front/html/fixture.html">FIXTURE</a>  
+  <a href="/Front/html/estadios.html">ESTADIOS</a>
+  <a href="/Front/html/grupos.html">GRUPOS</a>
+  <a href="/Front/index.html">INICIO</a>
 </div>`;
 
 document.getElementById("idfooter").innerHTML =  `

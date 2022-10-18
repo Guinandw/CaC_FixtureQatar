@@ -43,7 +43,34 @@ h4{
 .blanco{
     color: #f2f2f2;
 }
-
+.formularioFixtureInvisible{
+    display: none;
+}
+.inputFormulario{
+    background-color: #510509!important;
+    color: #f2f2f2!important;
+    margin-bottom: 1rem;
+}
+.enviar{ 
+    align-items:center;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #510509!important;;
+    cursor: pointer;
+    clip-path: polygon(4% 50%, 10% 4%, 90% 4%, 96% 50%, 90% 96%, 10% 96%);
+    transition: all .5s;
+    padding: 5px 20px;
+    margin: 5px 0.2vw;
+    text-decoration: none;
+}
+.tituloFormulario{
+    box-sizing: content-box;
+    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #F2F2F2;
+    margin: 0;
+    padding: 10px;
+}
 /* Responsive */
 @media only screen and (max-width: 1050px){
     #cruces{

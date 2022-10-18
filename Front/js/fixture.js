@@ -43,6 +43,8 @@ const paisesFinal = [];
 
 const botonPaisFinal = document.getElementsByClassName('final');
 
+let textarea = document.getElementById('mensaje');
+
 //OCTAVOS
 for (let i = 0; i < botonPais.length; i++) {
     botonPais[i].addEventListener('click', e => {
@@ -305,15 +307,32 @@ const infoPaisFinal = objeto => {
         grupo: objeto.parentElement.parentElement.querySelector('h4').innerText.replace('GRUPO ', '')
     }
     alerta(pais);
+    aparecerFormulario(pais);
 }
 function alerta(pais){
     Swal.fire({
         html:
         `<h1 class=" blanco arabicBolt"><span class="${pais.bandera}"></span>${pais.nombre} CAMPEON DEL MUNDO</h1>`,
         background: ' linear-gradient(to right, #510509, #c31432)'
-      })
+      });
 }
 
+function aparecerFormulario(pais){
+    const active = document.querySelector('.formularioFixtureInvisible');
+    active.classList.remove('formularioFixtureInvisible');
+    pintarMensaje(pais);
+}
+
+function pintarMensaje(pais){
+    textarea.innerHTML = `USTED HA ELEGIDO COMO CAMPEON A ${pais.nombre} EN CASO DE QUE SU RESULTADO COINCIDA, NOS CONTACTAREMOS CON USTED PARA QUE RECIBIRA SU PREMIO \n`;
+}
+function alertaError(pais){
+    Swal.fire({
+        icon: 'error',
+        html: `<h1 class=" blanco arabicBolt">Falto Completar ${pais.grupo}</h1>`,
+        background: ' linear-gradient(to right, #510509, #c31432)'
+      })
+}
 function alertaError(pais){
     Swal.fire({
         icon: 'error',

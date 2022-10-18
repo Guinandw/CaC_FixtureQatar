@@ -1,7 +1,10 @@
 /*INICIO GRUPO*/
-#grupos{
+ #grupos{
     height: 700px;
-}
+} 
+
+
+
 
 #grupos h3{
     font-family: "Arabic Heavy";
@@ -74,8 +77,8 @@
     padding: 0 5vw;
     padding-bottom: 50px;
     position: absolute;
-    top: 15vh;
-    background-color: var(--alter2);
+    top: -1vh;
+    background-color: var(--segundario);
     border-radius: 10px;
     visibility: hidden;
 }
@@ -104,9 +107,11 @@
 }
 
 .tarjeta-jugador{
-    width: 120px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     box-sizing: content-box;
+    clip-path: polygon(0% 50%, 2% 1%, 50% 0%, 98% 1%, 100% 50%, 98% 99%, 50% 100%, 2% 99%);
+   
     background-color: var(--primario);
     border-radius: 5px;
     margin-bottom: 5px;
@@ -118,6 +123,8 @@
     width: 99%;
     height: 100px; 
     padding: 1px;
+    clip-path: polygon(0% 50%, 2% 1%, 50% 0%, 98% 1%, 100% 50%, 98% 99%, 50% 100%, 2% 99%);
+   
 }
 
 .img-jugador{
@@ -131,18 +138,21 @@
     text-align: center;
     text-transform: capitalize;
     font-family: "Arabic Medium";
-    font-size: small;
+    font-size: x-small;
     color: var(--cuarto);
 }
 
 .cerrar-modal{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: var(--bordo);
-    border-radius: 10px;
-    color: var(--cuarto);
+    top: 10px;
+    right: 10px;
+    background-color: var(--cuarto);
+    border-radius: 5px;
+    border: transparent;
+    color: var(--primario);
+    font-family: 'Arabic bolt' , Verdana, Geneva, Tahoma, sans-serif;
     z-index: 10;
+
 }
 
 @media screen and (max-width:1060px) {

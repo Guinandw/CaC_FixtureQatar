@@ -4,7 +4,7 @@ const modal = document.querySelector(".modal-cubierta");
 //esta funcion abre el modal y pide la info a la API.
 function showTeam(teamID){
 	//console.log(teamID)
-	modal.classList.add('modal-on')
+	modal.classList.add('modal-on');
 	fetch(`https://apiv2.allsportsapi.com/football/?&met=Teams&teamId=${teamID}=&APIkey=${key}`)
 	.then(response =>response.json())
 	.then((equipo) => {
@@ -16,7 +16,7 @@ function showTeam(teamID){
 
 //Oculta la tarjeta y vacia el contenido que se habia cargado anteriormente
 function hideTeam(){
-	modal.classList.remove('modal-on') 
+	modal.classList.remove('modal-on');
 	document.querySelector('.modal-cubierta').innerHTML = ''
 }
 

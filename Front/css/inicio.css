@@ -84,7 +84,70 @@
 }
 /*PRESENTACION FIN*/ 
 
-#presentacionMascota{
+/*INFO COMIENZO */
+
+#infoMundial{
+padding: 30px;
+}
+#infoMundial h3{
+    color: var(--cuarto);
+    text-align: center;
+    font-family: 'Arabic Heavy', Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 18px;
+    font-size: 4em;
+}
+
+.info-contenedor{
+ width: 80%;
+ margin: 0 auto;
+ justify-content: center;
+}
+
+#img-contenedor{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    background:  no-repeat center ;
+    background-size: 180px;
+    clip-path: circle(80px);
+}
+
+.btn-contenedor{
+    display: inline-flex;
+    margin: 0 48%;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    
+}
+.btn-contenedor button{
+    border: transparent;
+    
+}
+
+.btn-contenedor img{
+    justify-content: center;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    color: var(--cuarto);
+    background-color: transparent;
+    
+}
+
+#info-desc, #info-titulo{
+    text-align: center;
+    color: var(--cuarto);
+    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
+}
+#info-titulo{
+    font-family: 'Arabic Heavy', Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+/* #presentacionMascota{
     margin-top: 5rem;
 }
 .mascotaDiv, .pelotaDiv{
@@ -138,8 +201,9 @@
 }
 .divImg:hover .pelotaImg {
     display: none;
-}
+} */
 
+/* INFO FIN*/
 /*NOTICIA INICIO*/
 #noticias{
     height: 100vh;

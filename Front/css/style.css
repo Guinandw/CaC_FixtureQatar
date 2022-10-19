@@ -133,7 +133,7 @@ footer {
     cursor: pointer;
     clip-path: polygon(4% 50%, 10% 4%, 90% 4%, 96% 50%, 90% 96%, 10% 96%);
     transition: all .5s;
-    width: 30px;
+    width: 50px;
     padding: 8px 10px 6px 10px;
     margin: 5px 0.2vw;
     text-decoration: none;

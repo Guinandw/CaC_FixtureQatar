@@ -1,39 +1,65 @@
 /*PRESENTACION INICIO*/
-.slider_f{
-    width: 1280px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-
-    animation: slide 15s infinite alternate ease-in-out;
-}
-
-.slider_f ul{
-    display: flex;
-    padding: 0;
-    width: 300%;
-}
-
-.slider_f li{
-    list-style: none;
+.present_texto1{
     width: 100%;
+    background-color: var(--cuarto);
+    margin-top: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: 'Arabic Heavy', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    color: var(--bordo);
+    text-decoration: none;
 }
 
-.slider_f img{
+.present_texto a{
+    text-decoration: none;
+}
+
+.present{
     width: 100%;
+    background-color: var(--cuarto);
+    margin-top: 20px;
 }
 
-@keyframes slide {
-    0% {margin-left: 0%;}
-    30% {margin-left: 0%;}
-
-    33% {margin-left: -100%;}
-    63% {margin-left: -100%;}
-
-    66% {margin-left: -200%;}
-    96% {margin-left: -200%;}
-}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    max-height: 704px;
+    position: relative;
+    margin: auto;
+    padding: 20px 0px;
+  }
+  
+  /* Caption text */
+  .text {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+	-webkit-text-fill-color:var(--bordo);
+    font-size: 2vw;
+    padding: 40px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arabic Heavy', Verdana, Geneva, Tahoma, sans-serif;
+  }
+   
+  /* Fading animation */
+  .fade {
+    animation-name: slide;
+    animation-duration: 4s;
+  }
+  
+  @keyframes slide {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* RESPONSIVE */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
 /*PRESENTACION FIN*/
+
 
 /*PRESENTACION INICIO*/
 .contenedor_pre{
@@ -122,7 +148,6 @@
 /*PRESENTACION FIN*/ 
 
 /*INFO COMIENZO */
-
 #infoMundial{
 padding: 30px;
 }

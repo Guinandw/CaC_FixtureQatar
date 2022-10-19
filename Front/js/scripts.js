@@ -1,3 +1,21 @@
+/*SLIDER INICIO*/
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // La imagen cambia cada 3 segundos
+}
+/*SLIDER FIN*/
+
+
 /* En este codico se encuentra como se cambia el contenido de las tarjetas de la 
 seccion de informacion*/
 
@@ -54,6 +72,4 @@ function cambiarInfo(noInfo){
     img.style.backgroundImage = info[noInfo].imagen;
     tit.innerText = info[noInfo].titulo;
     desc.innerText = info[noInfo].texto; 
-
-
 }

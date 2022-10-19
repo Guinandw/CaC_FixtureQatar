@@ -1,4 +1,4 @@
-/* PALETA DE COLORES */
+/*PALETA DE COLORES INICIO*/
 *{
     --fondo: #260108;
     --primario: #8C0327;
@@ -7,15 +7,16 @@
     --cuarto: #F2F2F2;
     --alter: #9D451F;
     --alter2: #156b48;
-
     
     --bordo: #8A1538;
     --rojo: #BF064A;
     --amarillo: #EEEEE4;
     --celeste: #00CFB7;
     --naranja: #FF6200;
-
 }
+/*PALETA DE COLORES FIN*/
+
+/*FUENTES - INICIO*/
 @font-face {
     font-family: "Arabic Medium";
     src: url(/Front/font/Qatar2022/Graphik\ Arabic\ Medium.otf);
@@ -24,31 +25,25 @@
     font-family: "Arabic Bolt";
     src: url(/Front/font/Qatar2022/Qatar2022Arabic-Bold.ttf);
 }
-
 @font-face {
     font-family: "Arabic Heavy";
     src: url(/Front/font/Qatar2022/Qatar2022Arabic-Heavy.ttf);
 }
+.arabicMedium {font-family: "Arabic Medium";}
+.arabicBolt {font-family: "Arabic Bolt";}
+.arabicHeavy {font-family: "Arabic Heavy";}
+/*FUENTES - FIN*/
 
-.arabicMedium {
-    font-family: "Arabic Medium";
-}
-
-.arabicBolt {
-    font-family: "Arabic Bolt";
-}
-
-.arabicHeavy {
-    font-family: "Arabic Heavy";
-}
-
+/* BODY INICIO*/
 body {
     margin: 0;
     background: #c31432;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #500322, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #510509, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
- /*COMIENZO ENCABEZADO */
+/* BODY FIN*/
+
+ /*ENCABEZADO INICIO*/
 header {
     display: flex;
     position: sticky;
@@ -77,9 +72,7 @@ header {
 	-webkit-text-fill-color:var(--bordo);
 }
 
-.menu {
-    display: block;
-}
+.menu {display: block;}
 
 .menu a {
     float: right;
@@ -98,6 +91,7 @@ header {
 }
 
 .menu a:hover {
+    color: var(--cuarto);
     background: var(--rojo);
     clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
 }
@@ -107,422 +101,11 @@ header {
     float: none;
     clip-path: polygon(0% 50%, 4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%);
   }
+/*ENCABEZADO FIN*/
 
-/* FINAL ENCABEZADO*/
-
-/*INICIO PRESENTACION */
-.contenedor_pre{
-
-    width: 80vw;
-    height: 80vh;
-    overflow: hidden;
-    }
-    
-     .diapositiva{
-        overflow: hidden;
-    } 
-
-    .mensaje{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100%;
-        z-index: 50;
-        font-size: larger;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
-    }
-    .mensaje1{
-        text-align: left;
-        background: linear-gradient(110deg,  rgba(0, 0, 0, 0.542) 33%,  transparent 33%);;
-    
-    }
-    .mensaje2{
-        text-align: center;
-        background: linear-gradient(110deg, transparent 33%, rgba(0,0,0,0.542) 33%, rgba(0,0,0,0.542) 66%, transparent 66%);;
-     }
-    .mensaje3{
-        text-align: right;
-        background: linear-gradient(110deg, transparent 66%, rgba(0,0,0,0.542) 66%);
-    }
-    .banner1, .banner2, .banner3{
-        position: absolute;
-        font-size: 3rem;
-    }
-    .banner1{
-        top: 20%;
-        left: 10%;
-        transform: translate(-50%, -50%);
-        animation-name: anim;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-
-    .banner2{
-        top: 50%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        animation-name: anim;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-
-    .banner3{
-        top: 70%;
-        left: 70%;
-        font-size: 4rem;
-        animation-name: anim2;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-
-    .imgPre{
-        top: 0;
-        left: 0;
-        height: 500px;
-    }
-
-    @keyframes anim {
-        0% {
-          transform: translateX(-100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      @keyframes anim2 {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    
-    /* FIN PRESENTACION */ 
-
-/*INICIO GRUPO*/
-#grupos{
-    height: 700px;
-}
-
-#grupos h3{
-    font-family: "Arabic Heavy";
-    font-size: 4em;
-    letter-spacing: 16px;
-    color: var(--cuarto);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-}
-.grupos-contenedor{
-    padding-top: 20px; /*el padding top es de la misma altura que el header + 20px*/
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4,270px);
-    grid-template-rows: repeat(2, 230px);
-    justify-content: center;
-    justify-items: normal;
-    box-sizing: content-box;
-
-}
-
-#grupos h4{
-    box-sizing: content-box;
-    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #F2F2F2;
-    border-bottom: 0.5px solid #F2F2F2 ;
-    margin: 0;
-    padding: 10px;
-}
-
-.grupo{
-    height: 80%;
-    box-sizing: content-box;
-    background-color: #510509;
-    margin: 0 10px 10px 10px;
-    padding-bottom: 20px;
-    border-radius: 5px;
-}
-
-.contenedorPaises{
-    padding: 20px 30px;
-}
-
-
-.pais{
-    margin: 0 auto;
-    min-height: 30px;
-    background: linear-gradient(to right, #f2f2f235, #F2F2F2);;
-    border-radius: 10px;
-    margin-bottom: 3px;
-    text-transform: uppercase;
-}
-
-.pais:hover{
-    background-color: var(--cuarto);
-}
-.contenedorPaises span{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-@media screen and (max-width:1060px) {
-    #grupos{
-        height: 1100px;
-    }
-    .grupos-contenedor{
-        height: 200vh;
-        grid-template-columns: repeat(2,270px);
-        grid-template-rows: repeat(4, 230px);
-   
-    
-    }
-}
-    
-@media screen and (max-width:530px) {
-        #grupos{
-            height: 700px;
-            box-sizing: content-box;
-        }
-        
-        #grupos h3{
-            font-size: 3em;
-        }
-        .grupos-contenedor{
-            height: 700px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            padding-top: 20px;
-            justify-content: start;
-            align-items: center;
-            height: 100vh;
-           
-           
-         
-        }
-        .grupo{
-            overflow: hidden;
-            width: 65vw;
-            max-height: 200px;
-            height: 20px;
-            transition-property: all;
-            transition-duration: 1s;
-        }
-
-
-        .grupo:hover{
-            flex-grow: 2 ;
-            transition-property: all;
-            transition-duration: 1s;
-            min-height: 200px;
-        }
-
-        .pais{
-            min-height: 30px;
-        }
-
-}
-/* modal */
-.modal-cubierta{
-    width: 90vw;
-    margin: 0 auto;
-    margin-right: 20px;
-    padding: 0 20px;
-    padding-bottom: 50px;
-    position: absolute;
-    top: 15vh;
-    left: 30px;
-    z-index: 10;
-    background-color: var(--alter2);
-    border-radius: 10px;
-    visibility: hidden;
-    z-index: -10;
-}
-.modal-on{
-    visibility: visible;
-    z-index: 10;
-}
-
-
-.modal-cubierta h3, h4{
-    text-align: center;
-    font-family: "Arabic Bolt";
-    text-transform: uppercase;
-    color: var(--cuarto);
-    letter-spacing: 3px;
-}
-
-.contenedor-jugadores{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.tarjeta-jugador{
-    width: 120px;
-    height: 200px;
-    box-sizing: content-box;
-    background-color: var(--primario);
-    border-radius: 5px;
-    margin-bottom: 5px;
-    padding: 1px;
-
-}
-.img-container{
-    width: 99%;
-    height: 100px; 
-    padding: 1px;
-}
-
-.img-jugador{
-    background-color: var(--cuarto);
-    width: 98%;
-    height: 98%; 
-    border-radius: 5px;  
-}
-.tarjeta-jugador p{
-    text-align: center;
-    text-transform: capitalize;
-    font-family: "Arabic Medium";
-    font-size: small;
-    color: var(--cuarto);
-    
-}
-
-.cerrar-modal{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: var(--bordo);
-    border-radius: 10px;
-    color: var(--cuarto);
-    z-index: 10;
-}
-
-/* FIN GRUPO */
-
-
-/* INICIO FIXTURE */
-
-/* #fixture{
-    height: 100vh;
-    background-color: var(--alter);
-} */
-
-.huso_cal {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(255, 242, 219);
-    color:var(--bordo);
-    margin: 10px 1%;
-    padding: 10px 0%;
-    font-family: "Arabic Heavy";
-    font-size: 1.1rem;
-    font-weight: bolder;
-    clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
-  }
-  .selec_cal {
-    font-size: 1.25rem;
-    font-family: "Arabic Heavy";
-    font-weight: bold;
-    color: var(--bordo);
-    margin: 0 10px;
-  
-  }
-  .conten_cal {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  .grupo_cal{
-      max-width: 25%;
-      min-width: 425px;
-      align-items:center;
-      text-align: center;
-      color: var(--bordo);
-      font-size: 16px;
-      clip-path: polygon(0% 50%, 3% 2%, 50% 0%, 97% 2%, 100% 50%, 97% 98%, 50% 100%, 3% 98%);
-      padding: 10px 20px;
-      margin: 1vh 0.25vw;
-      padding: 20px;
-      background:  rgb(255, 242, 219);  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to top, rgb(187, 150, 39), rgb(255, 242, 219));  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to top, rgb(187, 150, 39), rgb(255, 242, 219)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      font-family: "Arabic Heavy";
-      font-size: 2rem;
-      font-weight:900;
-  }
-  .partido {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      color: var(--bordo);
-      margin: 2%;
-      padding: 2%;
-      background-color:rgb(255, 255, 255);
-      align-items:center;
-      text-align: center;
-      font-size: 1.1rem;
-      clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
-    }
-  
-  .equip_cal {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-    }
-  
-  .estadio_cal{
-      display: flex;
-      min-height: 30px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-  }
-  
-  .fecha_cal{
-    display: flex;
-    min-height: 30px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .band_cal{
-    width: 45px;
-    border:1px solid  black;
-    margin: 2px 10px;
-  }
-  
-
-/* FIN FIXTURE */
-
-/* INICIO NOTICIA */
-
-#noticias{
-    height: 100vh;
-    background-color: var(--alter2);
-}
-
-/* FIN NOTICIA */ 
-
-/* INICIO FOOTER */
+/*FOOTER INICIO*/
 footer {
+    width: 100%;
     display: flex;
     min-height: 30px;
     align-items:center;
@@ -536,6 +119,7 @@ footer {
     box-sizing: border-box;
     padding: 5px 0;
     font-family: "Arabic Heavy";
+    
 }
 
 .menu_f a {
@@ -549,7 +133,7 @@ footer {
     cursor: pointer;
     clip-path: polygon(4% 50%, 10% 4%, 90% 4%, 96% 50%, 90% 96%, 10% 96%);
     transition: all .5s;
-    width: 30px;
+    width: 50px;
     padding: 8px 10px 6px 10px;
     margin: 5px 0.2vw;
     text-decoration: none;
@@ -559,8 +143,9 @@ footer {
     background: var(--rojo);
     clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
 }
-/* FIN FOOTER */
+/*FOOTER FIN*/
 
+/*RESPONSIVE INICIO*/
 @media screen and (max-width: 768px) {
     header {
         display: block;
@@ -590,5 +175,5 @@ footer {
 @media screen and (max-width: 300px) {
     .menu a {font-size: 6vw;}
     .menu.responsive a {font-size: 6vw;}
-    
 }
+/*RESPONSIVE FIN*/

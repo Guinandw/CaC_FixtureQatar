@@ -60,6 +60,7 @@ const infoPais = objeto => {
     }
     primerCruce(pais);
 }
+
 function primerCruce(pais){
     // GRUPOS A Y B
     if(pais.grupo == 'A' && paisesGrupoA.length == 0){

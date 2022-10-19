@@ -9,14 +9,16 @@
     grid-template-areas: "imgG info";
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
+    font-family: "Arabic Heavy";
 }
 .estadios-nombre{
     grid-area: info;
-    font-size: 4rem;
+    /*font-size: 4rem;*/
+    font-size: 4vw;
     text-align: center;
     margin: 0rem;
     color: var(--cuarto);
-    font-family: "Arabic Medium";
+    font-family: "Arabic Heavy";
 }
 .estdios-imgGrande{
     grid-area: imgG;
@@ -126,7 +128,8 @@
         margin-top: 2rem;
     } 
     .estadios-nombre {
-        font-size: 2.5rem;
+        /*font-size: 2.5rem;*/
+        font-size: 4vw;
     }
     .estadioImg{
         width: 20rem;

@@ -47,7 +47,7 @@
   font-weight:900;
 }
 
-.partido {
+.partido_cal {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -86,7 +86,6 @@
 }
 
 .band_cal{
-  
   border:1px solid black;
   margin: 2px 10px;
   font-size: 22pt;
@@ -100,6 +99,8 @@
     width:100%;
     min-width: 0px;
     max-width: 100%;
+    font-size: 6vw;
+    padding: 10px 10px;
   }
   .estadio_cal{
     min-height: auto;
@@ -107,11 +108,7 @@
   .fecha_cal{
     min-height: auto;
   }
-  .grupo_cal{
-    font-size: 6vw;
-    padding: 10px 10px;
-  }
-  .partido{
+  .partido_cal{
     font-size: 5vw;
   }
   .huso_cal{

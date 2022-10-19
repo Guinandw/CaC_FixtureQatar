@@ -34,7 +34,7 @@
   .text {
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 	-webkit-text-fill-color:var(--bordo);
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 40px 12px;
     position: absolute;
     bottom: 20px;

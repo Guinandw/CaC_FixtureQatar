@@ -1,4 +1,41 @@
 /*PRESENTACION INICIO*/
+.slider_f{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider_f ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+}
+
+.slider_f li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider_f img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+    33% {margin-left: -100%;}
+    63% {margin-left: -100%;}
+
+    66% {margin-left: -200%;}
+    96% {margin-left: -200%;}
+}
+/*PRESENTACION FIN*/
+
+/*PRESENTACION INICIO*/
 .contenedor_pre{
     width: 80vw;
     height: 80vh;

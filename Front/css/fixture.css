@@ -64,12 +64,13 @@ h4{
     text-decoration: none;
 }
 .tituloFormulario{
-    box-sizing: content-box;
-    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Arabic Heavy";
+    font-size: 4em;
+    letter-spacing: 16px;
+    color: var(--cuarto);
     text-align: center;
-    color: #F2F2F2;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 /* Responsive */
 @media only screen and (max-width: 1050px){

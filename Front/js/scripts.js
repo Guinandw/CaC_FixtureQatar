@@ -11,7 +11,23 @@ const info = [
         imagen: 'url(/Front/picture/AL-RIHLA.jpg)',
         titulo: 'AL RIHLA',
         texto: 'PELOTA OFICIAL DE LA COPA MUNDIAL 2022™. Al Rihla es la pelota oficial de la Copa Mundial Catar 2022, que llega con el logo oficial de la Copa Mundial de la FIFA™, además de la certificación Certificación FIFA Quality Pro, que garantiza un juego perfecto. Al Rihla significa "el viaje". Esta es la pelota que da comienzo a todo. Cada toque es una nueva historia. El 1% de las ventas netas globales de nuestras pelotas de fútbol se destinará a Common Goal hasta 2023.'
-    }
+    },
+    {
+        imagen: 'url(/Front/picture/MiniFixture.png)',
+        titulo: 'Juega con nuestro Fixture',
+        texto: 'Ahora puedes armar tu propio fixture, selecciona los equipos que crees que va a pasar de ronda, y enfrentalos hasta ver quien es el nuevo CAMPEON!'
+    },
+    {
+        imagen: 'url(/Front/picture/MiniGrupo.png)',
+        titulo: 'Basta de comprar Figuritas!',
+        texto: 'Mira al instante todos los jugadores que participaran en el mundial con solo hacer click en el equipo que deseas ver.'
+    },
+    {
+        imagen: 'url(/Front/picture/MiniCalendario.png)',
+        titulo: 'No te pierdas de nada',
+        texto: 'Nuestro calendario de partidos lo puedes actualizar a tu Huso Horario para que no te pierdas de nada.'
+    },
+    
      
 ]
 
@@ -24,16 +40,17 @@ const btnIzq = document.querySelector(".btn-izq");
 const btnDer = document.querySelector(".btn-der");
 let noInfo = 0;
 //img.style.background = info[0].imagen;
-
+console.log(noInfo);
 window.addEventListener("DOMContentLoaded", function (){
-   
+    console.log(noInfo);
     img.style.backgroundImage = info[noInfo].imagen;
     tit.innerText = info[noInfo].titulo;
     desc.innerText = info[noInfo].texto;
     console.log(img.style.backgroundImage)
 })
 
-btnIzq.addEventListener('click', function(){
+btnDer.addEventListener('click', function(){
+    console.log(noInfo);
    noInfo++;
    console.log(noInfo)
    if(noInfo>info.length-1){
@@ -42,7 +59,7 @@ btnIzq.addEventListener('click', function(){
    cambiarInfo(noInfo);
 })
 
-btnDer.addEventListener('click', function(){
+btnIzq.addEventListener('click', function(){
     noInfo--;
     if(noInfo < 0){
         noInfo = info.length-1;

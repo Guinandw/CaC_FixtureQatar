@@ -161,22 +161,22 @@ h4{
         grid-area: cruce1;
     }
     #tercerCruce{
-        grid-area: cruce3;
-    }
-    #quintoCruce{
-        grid-area: cruce5;
-    }
-    #septimoCruce{
-        grid-area: cruce7;
-    }
-    #segundoCruce{
         grid-area: cruce2;
     }
-    #cuartoCruce{
+    #quintoCruce{
+        grid-area: cruce3;
+    }
+    #septimoCruce{
         grid-area: cruce4;
     }
-    #sextoCruce{
+    #segundoCruce{
+        grid-area: cruce5;
+    }
+    #cuartoCruce{
         grid-area: cruce6;
+    }
+    #sextoCruce{
+        grid-area: cruce7;
     }
     #octavoCruce{
         grid-area: cruce8;
@@ -186,14 +186,22 @@ h4{
 @media only screen and (max-width: 529px){
 
     #cruces, #cruces8Vos, #cruces4tos{
-        display: flex;
-        flex-direction: column;
+        grid-template-areas: 
+        "cruce1" 
+        "cruce2"
+        "cruce3" 
+        "cruce4"
+        "cruce5" 
+        "cruce6" 
+        "cruce7" 
+        "cruce8" !important;
+        grid-template-columns: 1fr;
     }
     #grupos{
        
         box-sizing: content-box;
     }
-    #grupos h3{
+    #grupos h3, .tituloFormulario{
         font-size: 10vw;
         letter-spacing:3vw;
     }

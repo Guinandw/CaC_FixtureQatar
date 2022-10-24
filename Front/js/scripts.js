@@ -1,3 +1,27 @@
+/* COMIENZO PRESENTACION */
+
+let contadorDiapositiva = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let diapositivas = document.getElementsByClassName("diapositiva");
+  for (i = 0; i < diapositivas.length; i++) {
+    diapositivas[i].style.display = "none";
+  }
+  contadorDiapositiva++;
+  if (contadorDiapositiva > diapositivas.length) {contadorDiapositiva = 1}
+  diapositivas[contadorDiapositiva-1].style.display = "block";
+  setTimeout(showSlides, 3000); // 
+}
+
+
+
+/*FIN
+
+
+
+/*COMIENZO INFO MUNDIAL */
 /* En este codico se encuentra como se cambia el contenido de las tarjetas de la 
 seccion de informacion*/
 

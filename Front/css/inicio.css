@@ -4,18 +4,23 @@
     height: 80vh;
     overflow: hidden;
  }
+
     
 .diapositiva{
-     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: none;
+    overflow: hidden;
 } 
 
 .mensaje{
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     width: 100vw;
     height: 100%;
-    z-index: 50;
+    z-index: 0;
     font-size: larger;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -65,6 +70,7 @@
 .imgPre{
     top: 0;
     left: 0;
+    width: 100%;
     height: 500px;
 }
 
@@ -82,6 +88,9 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+
+
 /*PRESENTACION FIN*/ 
 
 /*INFO COMIENZO */

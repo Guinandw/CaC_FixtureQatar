@@ -155,7 +155,15 @@
     z-index: 10;
 
 }
-
+footer{
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width:1220px) {
+    .modal-cubierta {
+        margin: 15vw 5vw 5vw 5vw;
+    }
+}
 @media screen and (max-width:1060px) {
     #grupos{
         height: 1100px;
@@ -166,7 +174,18 @@
         grid-template-rows: repeat(4, 230px);
     }
 }
-    
+@media screen and (max-width:800px) {
+    .modal-cubierta {
+        margin: 17vw 5vw 5vw 5vw;
+    }
+    footer{
+        position: absolute;
+    }
+    #grupos h3{
+        font-size: 6vw;
+        letter-spacing:3vw;
+    }
+} 
 @media screen and (max-width:530px) {
     #grupos{
        
@@ -213,4 +232,19 @@
         font-size: 5vw;
     }
 }
+@media screen and (max-width:425px) {
+    .modal-cubierta {
+        margin: 22vw 5vw 5vw 5vw;
+    }
+    footer{
+        position: absolute;
+        bottom: -200px;
+    }
+} 
+@media screen and (max-width:375px) {
+    footer{
+        position: absolute;
+        bottom: -600px;
+    }
+} 
 /* FIN GRUPO */

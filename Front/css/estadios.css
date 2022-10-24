@@ -195,3 +195,42 @@
         height: 20rem;
     }
 }
+
+
+@media only screen and (max-width: 380px){
+    .estadios {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "imgG" "info";
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .estdios-imgGrande{
+        width: 23.4rem;
+        height: 24rem;
+    } 
+    .estadioImg{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+@media only screen and (max-width: 320px){
+    .estadios {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "imgG" "info";
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .estdios-imgGrande{
+        width: 20rem;
+        height: 24rem;
+    } 
+    .estadioImg{
+        width: 18rem;
+        height: 20rem;
+    }
+    .estadios-nombre {
+        font-size: 2rem;
+    }
+}

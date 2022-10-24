@@ -5,7 +5,6 @@
     overflow: hidden;
  }
 
-    
 .diapositiva{
     position: relative;
     margin: 0;
@@ -25,6 +24,7 @@
     font-size: larger;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    font-family: "Arabic Heavy";
 }
 .mensaje1{
     text-align: left;
@@ -89,16 +89,12 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-
-
-
 /*PRESENTACION FIN*/ 
 
 /*INFO COMIENZO */
-
 #infoMundial{
-padding: 30px;
-min-height: 550px;
+    padding: 30px;
+    min-height: 550px;
 }
 #infoMundial h3{
     color: var(--cuarto);
@@ -109,9 +105,9 @@ min-height: 550px;
 }
 
 .info-contenedor{
- width: 80%;
- margin: 0 auto;
- justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #img-contenedor{
@@ -157,70 +153,7 @@ min-height: 550px;
     font-family: 'Arabic Heavy', Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
 }
-
-/* #presentacionMascota{
-    margin-top: 5rem;
-}
-.mascotaDiv, .pelotaDiv{
-    display: grid;
-    grid-template-areas: "info img";
-    grid-template-columns: 1fr auto;
-}
-.mascotaLaeeb{
-    width: auto;
-    height: 700px;
-    grid-area: img;
-    margin: 1rem;
-}
-.mascotaInformacion, .pelotaInformacion{
-    grid-area: info;
-}
-.tituloMascota, .tituloPelota{
-    box-sizing: content-box;
-    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #F2F2F2;
-    border-bottom: 0.5px solid #F2F2F2 ;
-    margin: 0;
-    padding: 10px;
-    font-size: 50px;
-}
-.infoMascota, .infoPelota{
-    box-sizing: content-box;
-    font-family: 'Arabic Bolt', Verdana, Geneva, Tahoma, sans-serif;
-    color: #F2F2F2;
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-}
-.divImg{
-    grid-area: img;
-}
-.pelotaImg, .pelotaImgMessi{
-    height: 700px;
-    width: 743px;
-    margin: 1rem;
-}
-.pelotaImg{
-    display: flex;
-}
-.pelotaImgMessi{
-    display: none;
-}
-.divImg:hover .pelotaImgMessi {
-    display: block;
-}
-.divImg:hover .pelotaImg {
-    display: none;
-} */
-
 /* INFO FIN*/
-/*NOTICIA INICIO*/
-#noticias{
-    height: 100vh;
-    background-color: var(--alter2);
-}
-/*NOTICIA FIN*/ 
 
 /*RESPONSIVE INICIO*/
 @media only screen and (max-width: 1355px){

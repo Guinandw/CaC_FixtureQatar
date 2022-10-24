@@ -1,5 +1,4 @@
 /* COMIENZO PRESENTACION */
-
 let contadorDiapositiva = 0;
 showSlides();
 
@@ -14,12 +13,7 @@ function showSlides() {
   diapositivas[contadorDiapositiva-1].style.display = "block";
   setTimeout(showSlides, 3000); // 
 }
-
-
-
 /*FIN
-
-
 
 /*COMIENZO INFO MUNDIAL */
 /* En este codico se encuentra como se cambia el contenido de las tarjetas de la 
@@ -38,8 +32,8 @@ const info = [
     },
     {
         imagen: 'url(/Front/picture/MiniFixture.png)',
-        titulo: 'Juega con nuestro Fixture',
-        texto: 'Ahora puedes armar tu propio fixture, selecciona los equipos que crees que va a pasar de ronda, y enfrentalos hasta ver quien es el nuevo CAMPEON!'
+        titulo: 'Juga con nuestro Fixture',
+        texto: 'Ahora pOdes armar tu propio fixture, selecciona los equipos que crees que va a pasar de ronda, y enfrentalos hasta ver quien es el nuevo CAMPEON!'
     },
     {
         imagen: 'url(/Front/picture/MiniGrupo.png)',
@@ -49,10 +43,8 @@ const info = [
     {
         imagen: 'url(/Front/picture/MiniCalendario.png)',
         titulo: 'No te pierdas de nada',
-        texto: 'Nuestro calendario de partidos lo puedes actualizar a tu Huso Horario para que no te pierdas de nada.'
+        texto: 'Nuestro calendario de partidos lo podes actualizar a tu Huso Horario para que no te pierdas de nada.'
     },
-    
-     
 ]
 
 // guardamos los items que nos interesan
@@ -95,6 +87,4 @@ function cambiarInfo(noInfo){
     img.style.backgroundImage = info[noInfo].imagen;
     tit.innerText = info[noInfo].titulo;
     desc.innerText = info[noInfo].texto; 
-
-
 }

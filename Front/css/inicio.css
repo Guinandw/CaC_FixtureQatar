@@ -7,6 +7,7 @@
 
     
 .diapositiva{
+    position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -16,7 +17,7 @@
 
 .mensaje{
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0;
     width: 100vw;
     height: 100%;

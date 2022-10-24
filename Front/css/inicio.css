@@ -16,7 +16,7 @@
 
 .mensaje{
     position: absolute;
-    top: 0px;
+    top: -4px;
     left: 0;
     width: 100vw;
     height: 100%;

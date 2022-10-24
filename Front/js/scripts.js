@@ -1,25 +1,19 @@
-/* COMIENZO PRESENTACION */
-
-let contadorDiapositiva = 0;
+/*SLIDER INICIO*/
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
   let i;
-  let diapositivas = document.getElementsByClassName("diapositiva");
-  for (i = 0; i < diapositivas.length; i++) {
-    diapositivas[i].style.display = "none";
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-  contadorDiapositiva++;
-  if (contadorDiapositiva > diapositivas.length) {contadorDiapositiva = 1}
-  diapositivas[contadorDiapositiva-1].style.display = "block";
-  setTimeout(showSlides, 3000); // 
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // La imagen cambia cada 3 segundos
 }
-
-
-
-/*FIN
-
-
+/*SLIDER FIN*/
 
 /*COMIENZO INFO MUNDIAL */
 /* En este codico se encuentra como se cambia el contenido de las tarjetas de la 

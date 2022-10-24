@@ -1,21 +1,27 @@
-/* En este codico se encuentra como se cambia el contenido de las tarjetas de la 
-seccion de informacion*/
 
+/*SLIDER INICIO*/
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // La imagen cambia cada 3 segundos
+}
+/*SLIDER FIN*/
+
+/* En este codigo se encuentra como se cambia el contenido de las tarjetas de la seccion de informacion*/
 const info = [
     {
-        imagen: 'url(/Front/picture/Laeeb.jpg)',
-        titulo: "¡Hola, soy La'eeb™!",
-        texto: "Soy tu mejor compañero de fútbol del  verso de las mascotas. Aquí para dar la bienvenida al mundo, inspirar a los jóvenes aficionados, animar la acción y celebrar cada gol en Qatar 2022™. La'eeb™ es mi nombre, una palabra árabe que significa jugador súper habilidoso, y me encanta el hermoso juego. También me encanta apoyar, y no solo desde las gradas. ¡Me encanta apoyar a todos los que tienen una visión, trabajan duro y se proponen alcanzar sus sueños!"
-    },
-    {
-        imagen: 'url(/Front/picture/AL-RIHLA.jpg)',
-        titulo: 'AL RIHLA',
-        texto: 'PELOTA OFICIAL DE LA COPA MUNDIAL 2022™. Al Rihla es la pelota oficial de la Copa Mundial Catar 2022, que llega con el logo oficial de la Copa Mundial de la FIFA™, además de la certificación Certificación FIFA Quality Pro, que garantiza un juego perfecto. Al Rihla significa "el viaje". Esta es la pelota que da comienzo a todo. Cada toque es una nueva historia. El 1% de las ventas netas globales de nuestras pelotas de fútbol se destinará a Common Goal hasta 2023.'
-    },
-    {
         imagen: 'url(/Front/picture/MiniFixture.png)',
-        titulo: 'Juega con nuestro Fixture',
-        texto: 'Ahora puedes armar tu propio fixture, selecciona los equipos que crees que va a pasar de ronda, y enfrentalos hasta ver quien es el nuevo CAMPEON!'
+        titulo: 'Juga con nuestro Fixture',
+        texto: 'Ahora podes armar tu propio fixture, selecciona los equipos que crees que va a pasar de ronda, y enfrentalos hasta ver quien es el nuevo CAMPEON!'
     },
     {
         imagen: 'url(/Front/picture/MiniGrupo.png)',
@@ -25,10 +31,18 @@ const info = [
     {
         imagen: 'url(/Front/picture/MiniCalendario.png)',
         titulo: 'No te pierdas de nada',
-        texto: 'Nuestro calendario de partidos lo puedes actualizar a tu Huso Horario para que no te pierdas de nada.'
+        texto: 'Nuestro calendario de partidos lo podes actualizar a tu Huso Horario para que no te pierdas de nada.'
     },
-    
-     
+    {
+        imagen: 'url(/Front/picture/Laeeb.jpg)',
+        titulo: "¡Hola, soy La'eeb™!",
+        texto: "Soy tu mejor compañero de fútbol del  verso de las mascotas. Aquí para dar la bienvenida al mundo, inspirar a los jóvenes aficionados, animar la acción y celebrar cada gol en Qatar 2022™. La'eeb™ es mi nombre, una palabra árabe que significa jugador súper habilidoso, y me encanta el hermoso juego. También me encanta apoyar, y no solo desde las gradas. ¡Me encanta apoyar a todos los que tienen una visión, trabajan duro y se proponen alcanzar sus sueños!"
+    },
+    {
+        imagen: 'url(/Front/picture/AL-RIHLA.jpg)',
+        titulo: 'AL RIHLA',
+        texto: 'PELOTA OFICIAL DE LA COPA MUNDIAL 2022™. Al Rihla es la pelota oficial de la Copa Mundial Catar 2022, que llega con el logo oficial de la Copa Mundial de la FIFA™, además de la certificación Certificación FIFA Quality Pro, que garantiza un juego perfecto. Al Rihla significa "el viaje". Esta es la pelota que da comienzo a todo. Cada toque es una nueva historia. El 1% de las ventas netas globales de nuestras pelotas de fútbol se destinará a Common Goal hasta 2023.'
+    }
 ]
 
 // guardamos los items que nos interesan
@@ -70,7 +84,5 @@ btnIzq.addEventListener('click', function(){
 function cambiarInfo(noInfo){
     img.style.backgroundImage = info[noInfo].imagen;
     tit.innerText = info[noInfo].titulo;
-    desc.innerText = info[noInfo].texto; 
-
-
+    desc.innerText = info[noInfo].texto;
 }

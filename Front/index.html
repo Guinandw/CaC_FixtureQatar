@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/inicio.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         
         <title>Fixture Mundial Qatar 2022</title>
 
@@ -19,27 +18,27 @@
         <header id="idheader"> <!-- /ENCABEZADO INICIO  -->
         </header> <!--ENCABEZADO FIN  -->
 
-          <!-- presentacion contiene animacion, transformacion y transicion -->
-    <section id="presentacion">
-        <div class="contenedor-pre">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active " data-bs-interval="2000">
-                    <div class="mensaje mensaje1"><h1 class="banner1">Preparate</h1> </div>
-                    <img src="../Front/picture/prec2.jpg" class="d-block w-100 imgPre " alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000" >
-                    <div class="mensaje mensaje2"><h1 class="banner2">...para salir</h1></div>
-                    <img src="../Front/picture/football-1275123_1280.jpg" class="d-block w-100 imgPre" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="6000">
-                    <div class="mensaje mensaje3"><h1 class="banner3">Campeón!!!</h1></div>
-                    <img src="../Front/picture/prec3.jpg" class="d-block w-100 imgPre" alt="...">
-                  </div>
-                </div>
+        <section id="presentacion">
+          <div class="present">
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <a href="./html/fixture.html"><img src="./picture/presentacion/pres1.jpg" style="width:100%">
+                <div class="text" style="text-align:left; top: 10%;">PREPARATE...</div></a>
               </div>
-        </div>
-    </section>
+              
+              <div class="mySlides fade">
+                <a href="./html/fixture.html"><img src="./picture/presentacion/pres2.jpg" style="width:100%">
+                <div class="text" style="text-align:center; top: 30%;">...PARA SALIR...</div></a>
+              </div>
+              
+              <div class="mySlides fade">
+                <a href="./html/fixture.html"><img src="./picture/presentacion/pres3.jpg" style="width:100%"></a>
+                <div class="text" style="text-align:right; top: 50%;">... CAMPEÓN!</div></a>
+              </div>
+            </div>
+          </div>
+        </section>
 
     <section id="infoMundial">
       <h3>INFO MUNDIAL</h3>
@@ -47,24 +46,20 @@
         <div id="img-contenedor"></div>
         <h4 id="info-titulo"></h4>
         <p id="info-desc"></p>    
-    
       </div>
       <div class="btn-contenedor">
         <button class="btn-izq"><i class="fa-sharp fa-solid fa-chevron-left"></i></button>
         <button class="btn-der"><i class="fa-solid fa-chevron-right"></i></button>
-      
-
     </section>
 
    
     <!-- <section id="noticias"></section> -->
-        
-        <footer class="footer" id="idfooter"> <!-- PIE INICIO  -->
-        </footer> <!-- PIE FIN  -->
+    <footer class="footer" id="idfooter"> <!-- PIE INICIO  -->
+    </footer> <!-- PIE FIN  -->
 
-        <script src="../Front/js/scripts.js"></script>
-        <script src="../Front/js/headfoot.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-        <script src="../Front/js/API.js"></script>
+    <script src="../Front/js/scripts.js"></script>
+    <script src="../Front/js/headfoot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="../Front/js/API.js"></script>
 </body>
 </html>

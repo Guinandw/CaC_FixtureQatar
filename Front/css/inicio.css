@@ -162,6 +162,25 @@
         margin-right: 0rem;
     }
 }
+@media only screen and (max-width: 1024px){
+    .banner1, .banner2, .banner3 {
+        font-size: 2.5rem;
+    }
+    .banner1{
+        top: 20%;
+        left: 4%;
+        transform: translate(-50%, -50%);
+    }
+    .banner2{
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    .banner3{
+        top: 70%;
+        left: 65%;
+    }
+}
 @media only screen and (max-width: 980px){
     .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
         width: 400px;
@@ -183,6 +202,11 @@
         width: 300px;
         height: 500px;
     }
+    .banner1{
+        top: 10%;
+        left: 4%;
+        transform: translate(-50%, -50%);
+    }
 }
 @media only screen and (max-width: 425px){
     .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
@@ -194,11 +218,70 @@
         grid-template-areas: "info" "img";
         grid-template-rows: 1fr auto;
     }
+    #infoMundial h3{
+        font-size: 3rem;
+    }
+    .banner1, .banner2, .banner3 {
+        font-size: 1.8rem;
+    }
+    .banner1{
+        top: 1%;
+        left: 2%;
+        transform: translate(-50%, -50%);
+    }
+    .banner2{
+        top: 50%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    }
+    .banner3{
+        top: 84%;
+        left: 55%;
+    }
 }
 @media only screen and (max-width: 375px){
     .pelotaImg, .pelotaImgMessi, .mascotaLaeeb{
         width: 300px;
         height: 500px;
+    }
+    #infoMundial h3{
+        font-size: 2rem;
+    }
+    .banner1, .banner2, .banner3 {
+        font-size: 1.5rem;
+    }
+    .banner1{
+        top: 3%;
+        left: 2%;
+        transform: translate(-50%, -50%);
+    }
+    .banner2{
+        top: 50%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+    }
+    .banner3{
+        top: 85%;
+        left: 55%;
+    }
+}
+@media only screen and (max-width: 320px){
+    .banner1, .banner2, .banner3 {
+        font-size: 1.5rem;
+    }
+    .banner1{
+        top: 3%;
+        left: 2%;
+        transform: translate(-50%, -50%);
+    }
+    .banner2{
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    .banner3{
+        top: 85%;
+        left: 50%;
     }
 }
 /*RESPONSIVE FIN*/

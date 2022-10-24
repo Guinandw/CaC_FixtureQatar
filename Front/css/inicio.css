@@ -131,6 +131,8 @@
     
 }
 .btn-contenedor button{
+    clip-path: circle(10px);
+    margin-left: 15px;
     border: transparent;
     
 }

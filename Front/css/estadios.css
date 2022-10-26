@@ -136,7 +136,7 @@
         height: 20rem;
     }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 950px){
     .estadios{
         grid-template-columns: 0.5fr 1.5fr;
     }
@@ -175,7 +175,7 @@
         margin-bottom: 1rem;
     }
     .estdios-imgGrande{
-        width: 26.6rem;
+        width: 24rem;
         height: 24rem;
     } 
     .estdios-imgChico {
@@ -191,7 +191,7 @@
         font-size: 3rem;
     }
     .estadioImg{
-        width: 23rem;
+        width: 21rem;
         height: 20rem;
     }
 }
@@ -206,7 +206,7 @@
         margin-bottom: 1rem;
     }
     .estdios-imgGrande{
-        width: 23.4rem;
+        width: 22rem;
         height: 24rem;
     } 
     .estadioImg{

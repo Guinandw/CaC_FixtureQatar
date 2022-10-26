@@ -19,15 +19,15 @@
 /*FUENTES - INICIO*/
 @font-face {
     font-family: "Arabic Medium";
-    src: url(/Front/font/Qatar2022/Graphik\ Arabic\ Medium.otf);
+    src: url(../font/Qatar2022/Graphik\ Arabic\ Medium.otf);
 }
 @font-face {
     font-family: "Arabic Bolt";
-    src: url(/Front/font/Qatar2022/Qatar2022Arabic-Bold.ttf);
+    src: url(../font/Qatar2022/Qatar2022Arabic-Bold.ttf);
 }
 @font-face {
     font-family: "Arabic Heavy";
-    src: url(/Front/font/Qatar2022/Qatar2022Arabic-Heavy.ttf);
+    src: url(../font/Qatar2022/Qatar2022Arabic-Heavy.ttf);
 }
 .arabicMedium {font-family: "Arabic Medium";}
 .arabicBolt {font-family: "Arabic Bolt";}

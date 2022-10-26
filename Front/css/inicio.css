@@ -102,6 +102,7 @@
     font-family: 'Arabic Heavy', Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 18px;
     font-size: 4em;
+    margin: 0%;
 }
 
 .info-contenedor{
@@ -130,6 +131,8 @@
     
 }
 .btn-contenedor button{
+    clip-path: circle(10px);
+    margin-left: 15px;
     border: transparent;
     
 }
